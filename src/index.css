@@ -1,0 +1,146 @@
+@import "tailwindcss";
+
+*{
+  margin: 0;
+  padding: 0;
+   cursor: url("./assets/cursor.png"),auto;
+
+}
+
+
+
+html{
+  width: 100%;
+  font-size: 62.5%;
+  font-family: Verdana, Arial, Helvetica, Serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100dvh;
+ 
+  /*background-color: #43cfa0;*/
+  background-image: url('./assets/bg-blue.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+#content{
+  display: grid;
+  grid-template:
+    "header"
+    "leftSidebar"
+    "main"
+    "rightSidebar"
+    "footer";
+  grid-template-rows: 80px 17px 1fr 17px 80px;
+  grid-template-columns: 1fr;
+}
+
+header{
+  grid-area: header;
+}
+
+#leftSidebar{
+  grid-area: leftSidebar;
+}
+
+nav{
+  grid-area: navbar;
+}
+
+main{
+  grid-area: main;
+}
+
+#rightSidebar{
+  grid-area: rightSidebar;
+}
+
+footer{
+  grid-area: footer;
+}
+
+#home{
+  background: #54D4AE;
+/*background: radial-gradient(circle, rgba(84, 212, 174, 1) 34%, rgba(48, 183, 137, 1) 100%);*/
+
+}
+.border-ridge{
+  border: 4px ridge #5061ff;
+}
+.zoom{
+   transition: 1s;
+}
+
+.zoom:hover{
+   transform: scale(1.1);
+}
+
+.window {
+    box-shadow: inset -1px -1px #242424,
+      inset 1px 1px #dfdfdf, inset -2px -2px #808080,
+      inset 2px 2px #ffffff;
+    background: #ab9889;
+    padding: 3px;
+    /*width: 190px;*/
+}
+
+@media (min-width: 580px) {
+  #catalog{
+    background-image: url("./assets/bg-menu2b.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+  
+    grid-template:
+      "header header header"
+      "navbar navbar navbar"
+      "main main main";
+  
+    border: 2px solid;
+    border-top-color: #D4D0C8;
+    border-left-color: #D4D0C8;
+    border-right-color: #000000;
+    border-bottom-color: #000000;
+  }
+
+   #links, #social{
+    background-image: url("./assets/bg-menu2b.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+  
+  }
+
+  #cd{
+    background-image: url("./assets/bg-menu2b.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+  
+    grid-template:
+      "header header header"
+      "navbar navbar navbar"
+      "main main main";
+  
+    border: 2px solid;
+    border-top-color: #D4D0C8;
+    border-left-color: #D4D0C8;
+    border-right-color: #000000;
+    border-bottom-color: #000000;
+  }
+
+  #home{
+    background-image: url("./assets/bg-menu2b.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin: auto;
+    border: 2px solid;
+    border-top-color: #D4D0C8;
+    border-left-color: #D4D0C8;
+    border-right-color: #000000;
+    border-bottom-color: #000000;
+  }
+}
