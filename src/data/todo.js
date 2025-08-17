@@ -1,0 +1,22 @@
+export default [
+  "Scans de las caratulas y del CD de Microsoft Encarta 2000 (Demo).",
+  "Confirmar la existencia de 'Internet gratis Advance' en la edición N°8 u otra.",
+  "Nombres de los programas musicales que estaban incluidos en el cd de Speedboat attack.",
+  "Scans de las caratulas y del CD de Crazy pirat pinball.",
+  "Nombres de los programas que estaban incluidos en el CD de Crazy pirat pinball.",
+  "Nombres de los Tetris que estaban incluidos en el CD de Total soccer 2000.",
+  "Scans de las caratulas y del CD de Toyland Racing.",
+  "Scans de las caratulas y del CD de G-Tok Batalla Espacial.",
+  "Captura del Super salvapantallas 3D que estaba incluido en el CD de G-Tok.",
+  "Capturas o nombre de lo que sea que fuera el 'Kit digital para papelería personal' que estaba incluido en el CD de Rollerbot el robot cometodo.",
+  "Scans de las caratulas y del CD de Felinos.",
+  "Scans de las caratulas y del CD de Seven kingdoms.",
+  "Scans de las caratulas y del CD de 9 Demos.",
+  "Scans de las caratulas y del CD de la enciclopedia de la ciencia.",
+  "Se necesitan mejores imágenes de las tapas de las revistas con excepción de la N°11.",
+  "Capturas de las paginas de las revistas en que se mostraban los regalos que se obtenian por subscribirse a la revista.",
+  "Capturas de las paginas en que los lectores escribian los articulos, mensajes, trucos.",
+  "Capturas de las paginas de los sorteos y lo que se obtenia como premio. Por ejemplo el concurso de crear tu videoclip con Top Of the pops Mix factory.",
+  "Videos de las publicidades que se transmitian en el canal Telefe (Desconozco si otro canal lo hacia).",
+  "Capturas de las paginas de la Billiken (La versión semanal) en donde se promocione la Billiken compu."
+]

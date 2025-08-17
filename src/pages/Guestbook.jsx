@@ -1,5 +1,7 @@
 import Window from "../components/Window";
 import logo from '../assets/compu-logo.png'
+import btnReturn from '../assets/btn-return.png'
+import { NavLink } from "react-router-dom";
 
 export default function Guestbook() {
   return (
@@ -11,6 +13,9 @@ export default function Guestbook() {
       <section>
         
       </section>
+       <div className="h-[60px] flex items-center justify-end">
+        <NavLink to="/home"><img src={btnReturn} className="zoom w-[130px]"/></NavLink>
+      </div>
     </Window>
   )
 }

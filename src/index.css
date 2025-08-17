@@ -1,9 +1,8 @@
 @import "tailwindcss";
 
 *{
-  margin: 0;
-  padding: 0;
-   cursor: url("./assets/cursor.png"),auto;
+ 
+  cursor: url("./assets/cursor.png"),auto;
 
 }
 
@@ -90,6 +89,17 @@ footer{
     /*width: 190px;*/
 }
 
+.rainbow-text{
+   margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 @media (min-width: 580px) {
   #catalog{
     background-image: url("./assets/bg-menu2b.png");
@@ -113,6 +123,12 @@ footer{
     background-repeat: no-repeat;
     background-size:cover;
   
+  }
+
+  #cds{
+   background-image: url("./assets/bg-move.gif");
+    background-repeat: no-repeat;
+    background-size:cover;
   }
 
   #cd{
