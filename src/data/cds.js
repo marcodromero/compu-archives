@@ -200,7 +200,7 @@ export default[
   {
     code: "bc13cd01",
     title: "Crazy Pirat Pinball + Kit de herramientas de Internet",
-    content: ["Crazy Pirat Pinball ( SlamTilt Resurrection: The Pirate)", "Kit de herramientas de Internet"],
+    content: ["Crazy Pirat Pinball (SlamTilt Resurrection: The Pirate)", "Kit de herramientas de Internet (CuteFTP 4, Download Acellerator Plus Beta, WS_FTP Pro 6.5 (Trial), GetRight 3, ICQ 2000a Beta, irfanView 3, Microangelo 5, mIRC 5, PicaView, Winzip 8)"],
     casePreview:"",
     coverFront: bc13cd01CoverFront ,
     images: [bc13cd01CoverFront],
@@ -462,7 +462,7 @@ export default[
   {
     code: "bc27cd01",
     title: "Tzar + Internet gratis Atlantida digital",
-    content: ["Tzar (Juego completo)", "Discador Atlantida Digital", "21 Programas (Internet explorer, Netscape 4.7, Netscape 6.1, Opera 5.12, MSN Explorer, Audio Galaxy, Winamp 2.7.6, Real 8 , Quicktime 5.0, Indeo 5, Divx 4.01, Winzip 8, Acrobat Reader, Expander 6.0, DirectX, Kazaa, Limewire 1.6, Icq 2001b, Msn 4.5, Norton Anti Virus, McAfee 4)"],
+    content: ["Tzar", "Discador Atlantida Digital", "21 Programas (Internet explorer, Netscape 4.7, Netscape 6.1, Opera 5.12, MSN Explorer, Audio Galaxy, Winamp 2.7.6, Real 8 , Quicktime 5.0, Indeo 5, Divx 4.01, Winzip 8, Acrobat Reader, Expander 6.0, DirectX, Kazaa, Limewire 1.6, Icq 2001b, Msn 4.5, Norton Anti Virus, McAfee 4)"],
     casePreview:"",
     images: [bc27cd01CoverFront],
     coverFront: bc27cd01CoverFront ,

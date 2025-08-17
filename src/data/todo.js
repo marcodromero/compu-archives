@@ -3,7 +3,6 @@ export default [
   "Confirmar la existencia de 'Internet gratis Advance' en la edición N°8 u otra.",
   "Nombres de los programas musicales que estaban incluidos en el cd de Speedboat attack.",
   "Scans de las caratulas y del CD de Crazy pirat pinball.",
-  "Nombres de los programas que estaban incluidos en el CD de Crazy pirat pinball.",
   "Nombres de los Tetris que estaban incluidos en el CD de Total soccer 2000.",
   "Scans de las caratulas y del CD de Toyland Racing.",
   "Scans de las caratulas y del CD de G-Tok Batalla Espacial.",
