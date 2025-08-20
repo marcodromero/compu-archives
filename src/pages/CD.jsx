@@ -5,6 +5,10 @@ import { useState } from "react";
 import logo from '../assets/compu-logo.png'
 import btnReturn from '../assets/btn-return.png'
 import { NavLink } from "react-router-dom";
+import iconWeb from '../assets/icon-web.png'
+import iconSteam from '../assets/icon-steam.png'
+import iconGog from '../assets/icon-gog.png'
+
 
 
 export default function CD() {
@@ -17,7 +21,7 @@ export default function CD() {
 
   function handleClickNext(){
     (index < lastIndex) ? setIndex(index + 1) : setIndex(0)
-    console.log(index)
+
   }
   function handleClickBack(){
     (index > 0) ? setIndex(index - 1) : setIndex(lastIndex)
@@ -30,12 +34,12 @@ export default function CD() {
             <h1 className="text-[18px] text-white text-right w-[500px]">{cdData.title}</h1>
         </div>
         <section className="flex text-white justify-between " >
-          <section className="flex flex-col w-[300px] border-ridge">
+          <section className="flex flex-col w-[370px] h-[340px] border-ridge bg-box">
             <h1 className="bg-black text-amber-300 font-bold text-[1.2rem] text-center">Galeria de imágenes</h1>
             <div>
               {
                 cdData.images
-                ? <img src={cdData.images[index]} className="w-[300px]"/>
+                ? <img src={cdData.images[index]} className=" w-[370px] h-[280px] object-contain"/>
                 : null
               }
               
@@ -46,35 +50,53 @@ export default function CD() {
             </div>
           </section>
       
-          <div className="flex flex-col w-[340px] border-ridge">
-            <h2  className="bg-black text-amber-300 font-bold text-[1.2rem] text-center">Contenido del CD-ROM</h2>
-            <ul className=" w-[340px] h-[200px] ">
-              {
-                cdData.content
-                ?(cdData.content.map((item)=>{
-                  return(
-                    <li className="text-[13px]">🔸 {item}</li>
-                  )
-                }))
-                : null
-              }
-            </ul>
-            <div className="flex flex-col">
+          <div className="flex flex-col w-[300px] justify-between">
+            <div className="flex flex-col w-full border-ridge bg-box">
+              <h2  className="bg-black text-amber-300 font-bold text-[12px] text-center">Contenido del CD-ROM</h2>
+              <ul className=" w-full h-[230px] ">
+                {
+                  cdData.content
+                  ?(cdData.content.map((item, i)=>{
+                    return(
+                      <li className="text-[13px] m-2" key={i}>🔸 {item}</li>
+                    )
+                  }))
+                  : null
+                }
+              </ul>
+            </div>
+            
+            <div className="flex flex-col w-full border-ridge bg-box">
+              <h1 className="bg-black text-amber-300 font-bold text-[12px] text-center">Tiendas oficiales</h1>
+              <div className="flex gap-2 h-[48px] pl-2">
+
+              
               {
                 cdData.steam
-                ? <a href={cdData.steam}>Ver en Steam</a>
+                ? <a href={cdData.steam}><img src={iconSteam} className="zoom"/></a>
                 : null     
               }
               {
                 cdData.gog
-                ? <a href={cdData.gog}>Ver en GOG.com</a>
+                ? <a href={cdData.gog}><img src={iconGog} className="zoom"/></a>
                 : null
               }
               {
                 cdData.website
-                ? <a href={cdData.download}>Ver en el sitio oficial </a>
+                ? <a href={cdData.website}><img src={iconWeb} className="zoom"/> </a>
                 : null
               }
+              {
+                cdData.wish
+                ? <div className=" text-[12px] p-2 "><p><a href={cdData.wish} className="zoom text-[#f15797] font-bold underline">Votar</a> para llevar este juego a GOG y ayudar a preservarlo.</p></div>
+                : null
+              }
+              {
+                (!cdData.steam && !cdData.gog && !cdData.website && !cdData.wish)
+                ? <div className=" text-[12px] p-2 "><p>No se encuentra en ninguna tienda.</p></div>
+                : null
+              }
+              </div>
             </div>
           </div>
     

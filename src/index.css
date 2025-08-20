@@ -89,6 +89,11 @@ footer{
     /*width: 190px;*/
 }
 
+.bg-box{
+  background-color:#312c85;
+  color: #f7f9fb;
+}
+
 .rainbow-text{
    margin-top: 0px;
   margin-bottom: 10px;

@@ -26,6 +26,8 @@ import bcCover25 from '../assets/covers/no-image.jpg';
 import bcCover26 from '../assets/covers/no-image.jpg';
 import bcCover27 from '../assets/covers/bc27.jpg';
 
+
+
 import bc01Cd01Preview from '../assets/gifs/bc01-cd01-preview.gif'
 import bc01Cd02Preview from '../assets/gifs/no-cover.gif'
 import bc02Cd01Preview from '../assets/gifs/bc02-cd01-preview.gif'
@@ -87,35 +89,35 @@ export default[
     published: "Octubre de 1999",
     gifts:[{code:"bc01cd01", preview:bc01Cd01Preview}, {code:"bc01cd02", preview:bc01Cd02Preview}],
     video:[bc01Video],
-    description:"Incluia 1 CD-ROM Con el videojuego Claw."
+    description:"Claw + Microsoft Encarta 2000"
   },
   {
     edition: "02",
     cover: bcCover02,
     published: "Noviembre de 1999",
     gifts:[{code:"bc02cd01", preview:bc02Cd01Preview}],
-    description:"Claw"
+    description:"S.A.R: Helicopteros de búsqueda y rescate"
   },
   {
     edition: "03",
     cover: bcCover03,
     published: "Diciembre de 1999",
     gifts:[{code:"bc03cd01", preview:bc03Cd01Preview},{code:"bc03cd02", preview:bc03Cd02Preview}],
-    description:"Primera edición de la revista que incluia un CD-Rom con el juego Claw."
+    description:"Super bike racing + 4 Demos"
   },
   {
     edition: "04",
     cover: bcCover04,
     published: "Enero de 2000",
     gifts:[{code:"bc04cd01", preview:bc04Cd01Preview}],
-    description:"Primera edición de la revista que incluia un CD-Rom con el juego Claw."
+    description:"El Diablo de Halloween + Supertrucos"
   },
   {
     edition: "05",
     cover: bcCover05,
     published: "Febrero de 2000",
     gifts:[{code:"bc05cd01", preview:bc05Cd01Preview}],
-    description:"Primera edición de la revista que incluia un CD-Rom con el juego Claw."
+    description:"Snowmobile Championship 2000"
   },
   {
     edition: "06",
@@ -123,7 +125,7 @@ export default[
     published: "Marzo de 2000",
     gifts:[{code:"bc06cd01", preview:bc06Cd01Preview}],
     video:[bc06Video],
-    description:"Primera edición de la revista que incluia un CD-Rom con el juego Claw."
+    description:"Diccionario Elemental Multilenguaje"
   },
   {
     edition: "07",
@@ -131,21 +133,21 @@ export default[
     published: "Abril de 2000",
     gifts:[{code:"bc07cd01", preview:bc07Cd01Preview}],
     video:[bc07Video],
-    description:"Primera edición de la revista que incluia un CD-Rom con el juego Claw."
+    description:"Eliminatorias Europeas"
   },
   {
     edition: "08",
     cover: bcCover08,
     published: "Mayo de 2000",
     gifts:[{code:"bc08cd01", preview:bc08Cd01Preview }],
-    description:"Primera edición de la revista que incluia un CD-Rom con el juego Claw."
+    description:"Oddworld Aby's odysee"
   },
   {
     edition: "09",
     cover: bcCover09,
     published: "Junio de 2000",
     gifts:[{code:"bc09cd01", preview:bc09Cd01Preview}],
-    description:"Primera edición de la revista que incluia un CD-Rom con el juego Claw."
+    description:"Creatures + 2 Antivirus"
   },
   {
     edition: "10",
@@ -153,7 +155,7 @@ export default[
     published: "Julio de 2000",
     gifts:[{code:"bc10cd01" , preview:bc10Cd01Preview}],
     video:[bc10Video],
-    description:"Primera edición de la revista que incluia un CD-Rom con el juego Claw."
+    description:"Lode runner 2 + Fotos de la NASA"
   },
   {
     edition: "11",
@@ -161,7 +163,7 @@ export default[
     published: "Agosto de 2000",
     gifts:[{code:"bc11cd01", preview:bc11Cd01Preview}],
     video:[bc11Video],
-    description:"Primera edición de la revista que incluia un CD-Rom con el juego Claw."
+    description:"Speedboat Attack + Programas"
   },
   {
     edition: "12",
@@ -169,14 +171,14 @@ export default[
     published: "Septiembre de 2000",
     gifts:[{code:"bc12cd01", preview:bc12Cd01Preview}],
     video:[bc12Video],
-    description:"Primera edición de la revista que incluia un CD-Rom con el juego Claw."
+    description:"Speed 2021 + Fotos de Australia"
   },
   {
     edition: "13",
     cover: bcCover13,
     published: "Octubre de 2000",
     gifts:[{code:"bc13cd01", preview:bc13Cd01Preview}],
-    description:"Primera edición de la revista que incluia un CD-Rom con el juego Claw."
+    description:"Crazy Pirat Pinball + 10 Programas"
   },
   {
     edition: "14",
@@ -184,7 +186,7 @@ export default[
     published: "Noviembre de 2000",
     gifts:[{code:"bc14cd01", preview:bc14Cd01Preview}],
     video:[bc14Video],
-    description:"Primera edición de la revista que incluia un CD-Rom con el juego Claw."
+    description:"Total Soccer 2000 + 3 Tetris"
   },
   {
     edition: "15",
@@ -192,21 +194,21 @@ export default[
     published: "Diciembre de 2000",
     gifts:[{code:"bc15cd01", preview:bc15Cd01Preview}],
     video:[bc15Video],
-    description:"Primera edición de la revista que incluia un CD-Rom con el juego Claw."
+    description:"Toyland Racing + 5 Demos"
   },
   {
     edition: "16",
     cover: bcCover16,
     published: "Enero de 2001",
     gifts:[{code:"bc16cd01", preview:bc16Cd01Preview}],
-    description:"Primera edición de la revista que incluia un CD-Rom con el juego Claw."
+    description:"G-Tok: Batalla espacial + Salvapantallas 3D"
   },
   {
     edition: "17",
     cover: bcCover17,
     published: "Febrero de 2001",
     gifts:[{code:"bc17cd01", preview: bc17Cd01Preview}],
-    description:"Primera edición de la revista que incluia un CD-Rom con el juego Claw."
+    description:"Rollerbot: El robot cometodo + Kit digital para papelería personal"
   },
   {
     edition: "18",
@@ -214,69 +216,69 @@ export default[
     published: "Marzo de 2001",
     gifts:[{code:"bc18cd01", preview: bc18Cd01Preview}, {code:"bc18cd02", preview: bc18Cd02Preview}],
     video:[bc18Video],
-    description:"Primera edición de la revista que incluia un CD-Rom con el juego Claw."
+    description:"Patrulla 2098 + Firewall"
   },
   {
     edition: "19",
     cover: bcCover19,
     published: "Abril de 2001",
     gifts:[{code:"bc19cd01", preview:bc19Cd01Preview}, {code:"bc19cd02", preview:bc19Cd02Preview}],
-    description:"Primera edición de la revista que incluia un CD-Rom con el juego Claw."
+    description:" RoboRumble + Curso de Internet + Fotos satelitales de Argentina"
   },
   {
     edition: "20",
     cover: bcCover20,
     published: "Mayo de 2001",
     gifts:[{code:"bc20cd01", preview:bc20Cd01Preview}, {code:"bc20cd02", preview:bc20Cd02Preview}],
-    description:"Primera edición de la revista que incluia un CD-Rom con el juego Claw."
+    description:"Caballeros y Mercaderes + Dinosaurios"
   },
   {
     edition: "21",
     cover: bcCover21,
     published: "Junio de 2001",
     gifts:[{code:"bc21cd01", preview:bc21Cd01Preview }, {code:"bc21cd02", preview:bc21Cd02Preview }],
-    description:"Primera edición de la revista que incluia un CD-Rom con el juego Claw."
+    description:"Motocross GP + Enciclopedia del Espacio y el Universo"
   },
   {
     edition: "22",
     cover: bcCover22,
     published: "Julio de 2001",
     gifts:[{code:"bc22cd01", preview:bc22Cd01Preview}, {code:"bc22cd02", preview:bc22Cd02Preview}],
-    description:"Primera edición de la revista que incluia un CD-Rom con el juego Claw."
+    description:" Akimbo + Felinos"
   },
   {
     edition: "23",
     cover: bcCover23,
     published: "Agosto de 2001",
     gifts:[{code:"bc23cd01", preview:bc23Cd01Preview}, {code:"bc23cd02", preview:bc23Cd02Preview}],
-    description:"Primera edición de la revista que incluia un CD-Rom con el juego Claw."
+    description:"Speedway + Top of the Pops Mix Factory"
   },
   {
     edition: "24",
     cover: bcCover24,
     published: "Septiembre de 2001",
     gifts:[{code:"bc24cd01", preview:bc24Cd01Preview},{code:"bc24cd02", preview:bc24Cd02Preview}, {code:"bc24cd03", preview:bc24Cd03Preview}],
-    description:"Primera edición de la revista que incluia un CD-Rom con el juego Claw."
+    description:"Seven Kingdoms + Enciclopedia de la naturaleza"
   },
   {
     edition: "25",
     cover: bcCover25,
     published: "Octubre de 2001",
     gifts:[{code:"bc25cd01",  preview:bc25Cd01Preview},  {code:"bc25cd02",  preview:bc25Cd02Preview},{code:"bc25cd03",  preview:bc25Cd03Preview}],
-    description:"Primera edición de la revista que incluia un CD-Rom con el juego Claw."
+    description:"Super atletismo + Enciclopedia de la ciencia 2.0 + 9 Demos"
   },
   {
     edition: "26",
     cover: bcCover26,
     published: "Noviembre de 2001",
     gifts:[{code:"bc26cd01",  preview:bc26Cd01Preview}, {code:"bc26cd02",  preview:bc26Cd02Preview}],
-    description:"Primera edición de la revista que incluia un CD-Rom con el juego Claw."
+    description:"Hades 2 + Moving Puzzle Mundo marino + 3 Demos"
   },
   {
     edition: "27",
     cover: bcCover27,
     published: "Diciembre de 2001",
     gifts:[{code:"bc27cd01", preview:bc27Cd01Preview}, {code:"bc27cd02", preview:bc27Cd02Preview}],
-    description:"Primera edición de la revista que incluia un CD-Rom con el juego Claw."
+    description:"Tzar + Boomeran Breaker + 21 Programas"
   }
 ]

@@ -3,7 +3,6 @@ import Window from "../components/Window";
 import data  from "../data/data";
 import { useNavigate } from "react-router-dom";
 import logo from '../assets/compu-logo.png'
-import revistas_title from '../assets/revistas_y_cds.png'
 import btnReturn from '../assets/btn-return.png'
 import { NavLink } from "react-router-dom";
 
@@ -37,17 +36,17 @@ export default function Catalog() {
     <Window id="catalog">
       <div className="h-[60px] flex items-center justify-between">
         <img src={logo} className="w-[100px]"/>
-        <img src={revistas_title} className="w-[150px]"/>
+        <h1 className="text-[18px] text-white text-right w-[500px]">Revistas y CD-Roms</h1>
       </div>
       
       <section className="flex flex-col md:flex-row md:justify-around">
-        <div className="w-full h-[350px] md:w-[200px] flex flex-col border-ridge">
-            <div className="bg-black text-amber-300 font-bold text-[12px] text-center">REVISTAS</div>
+        <div className="w-full h-[340px] md:w-[200px] flex flex-col border-ridge">
+            <div className="bg-black text-amber-300 font-bold text-[12px] text-center">Revistas</div>
             <div className="w-full h-full overflow-scroll  bg-white  ">
             {
               data.map((bc, i)=>{
                 return (
-                  <button key={`bc${bc.edition}`}  id={`bc${bc.edition}`} onClick={()=>handleClickSetIndexData(i)} className="block text-[12px]  hover:bg-gray-400 w-full text-left ">{`N°${bc.edition} - ${bc.published} `}</button>
+                  <button key={`bc${bc.edition}`}  id={`bc${bc.edition}`} onClick={()=>handleClickSetIndexData(i)} className="block text-[12px]  hover:bg-indigo-950 w-full text-left border-t-1 border-b-1 border-t-indigo-600 bg-indigo-900  border-b-neutral-800 p-2 text-amber-300" title={`Revista N° ${bc.edition}`}><span className="bg-amber-500 text-black rounded-full px-1 font-bold" >N°{bc.edition}</span>   {bc.published} <div ><small className=" text-white">{bc.description}</small></div></button>
                 )
               })
             }
@@ -55,20 +54,20 @@ export default function Catalog() {
         </div>
 
         {/*Magazines*/}
-        <section className="flex flex-col md:justify-between">
+        <section className="flex flex-col md:justify-between h-[340px]">
           <div className="flex justify-center items-center w-[250px] h-[308px] border-ridge  bg-black">
             <img src={data[indexData].cover} className=" w-[250px] h-full object-cover"/>
           </div>
-          <div class="w-[250px] h-[30px] border-ridge bg-[#3541ab] overflow-hidden">
+          <div class="w-[250px] h-[25px] border-ridge bg-[#3541ab] overflow-hidden">
 
           </div>
         </section>
 
         
-        <div className="flex flex-col justify-between ">
+        <div className="flex flex-col justify-between  h-[340px]">
         {/*Videos*/}
           <div className="w-[200px] h-[172px] border-ridge bg-black overflow-hidden">
-            <div className="bg-black text-amber-300 font-bold text-[1.2rem] text-center">PUBLICIDAD EN TV</div>
+            <div className="bg-black text-amber-300 font-bold text-[1.2rem] text-center">Publicidad en TV</div>
             {
               data[indexData].video?
                 <video src={data[indexData].video} controls className="w-[200px] h-[150px]">
@@ -79,8 +78,8 @@ export default function Catalog() {
             }
           </div>
         {/*CD's*/}
-          <div className="w-[200px] h-[170px] bg-blue-900  border-ridge">
-            <div className="bg-black text-amber-300 font-bold text-[1.2rem] text-center">CD-ROMS</div>
+          <div className="w-[200px] h-[168px] bg-blue-900  border-ridge">
+            <div className="bg-black text-amber-300 font-bold text-[12px] text-center">CD-Roms</div>
             <div id="cds" className="flex flex-col justify-between h-[144px] items-center relative">
               {
                 
