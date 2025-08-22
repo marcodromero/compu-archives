@@ -89,7 +89,7 @@ export default[
     published: "Octubre de 1999",
     gifts:[{code:"bc01cd01", preview:bc01Cd01Preview}, {code:"bc01cd02", preview:bc01Cd02Preview}],
     video:[bc01Video],
-    description:"Claw + Microsoft Encarta 2000"
+    description:"Claw + Encarta 2000 (Demo)"
   },
   {
     edition: "02",
@@ -223,7 +223,7 @@ export default[
     cover: bcCover19,
     published: "Abril de 2001",
     gifts:[{code:"bc19cd01", preview:bc19Cd01Preview}, {code:"bc19cd02", preview:bc19Cd02Preview}],
-    description:" RoboRumble + Curso de Internet + Fotos satelitales de Argentina"
+    description:" RoboRumble + Fondos de escritorio + Curso de Internet + Fotos satelitales de Argentina"
   },
   {
     edition: "20",
@@ -237,7 +237,7 @@ export default[
     cover: bcCover21,
     published: "Junio de 2001",
     gifts:[{code:"bc21cd01", preview:bc21Cd01Preview }, {code:"bc21cd02", preview:bc21Cd02Preview }],
-    description:"Motocross GP + Enciclopedia del Espacio y el Universo"
+    description:"Silkolene Honda Motocross GP + Enciclopedia del Espacio y el Universo"
   },
   {
     edition: "22",

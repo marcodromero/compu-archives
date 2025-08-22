@@ -137,7 +137,7 @@ export default[
   },
   {
     code: "bc02cd01",
-    title: "S.A.R Helicopteros de busqueda y rescate",
+    title: "S.A.R Helicopteros de búsqueda y rescate",
     content: ["S.A.R (Search and Rescue)"],
     images: bc02CD01ImagesArray,
     wish: "https://www.gog.com/dreamlist/game/search-rescue-1997"
@@ -352,7 +352,7 @@ export default[
   {
     code: "bc25cd01",
     title: "Super atletismo",
-    content: ["Super atletismo (Sergei Bubka's Millennium Games / PC Atletismo 2000)"],
+    content: ["Super atletismo (Sergei Bubka's Millennium Games / PC Atletismo 2000)", "Manual en español"],
     images: bc25CD01ImagesArray,    
   },
   {

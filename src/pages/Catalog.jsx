@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Window from "../components/Window";
 import data  from "../data/data";
 import { useNavigate } from "react-router-dom";
@@ -6,15 +6,21 @@ import logo from '../assets/compu-logo.png'
 import btnReturn from '../assets/btn-return.png'
 import { NavLink } from "react-router-dom";
 
-import arrow from '../assets/arrow.png'
+import arrow from '../assets/red-arrow-right.gif'
 
 
 import staticTv from '../assets/static-tv.gif'
 
 export default function Catalog() {
-  const [indexData, setIndexData] = useState(0)
+  let default1 = 0 ;
+  const localIndexData = localStorage.getItem("indexData");
+  if(localIndexData){
+         default1 = parseInt(localIndexData)
+  }
+  const [indexData, setIndexData] = useState(default1)
   const [indexGift, setIndexGift] = useState(0)
-
+ 
+  
   const navigate = useNavigate();
   const lastIndexGifts = data[indexData].gifts.length - 1;
 
@@ -26,11 +32,23 @@ export default function Catalog() {
   function handleClickSetIndexData(i){
     setIndexData(i)
     setIndexGift(0)
+    
+
   }
 
   function handleClickCD(code){
     navigate(`/cd/${code}`)
   }
+
+  useEffect(() => {
+    localStorage.setItem("indexData", indexData);
+  }, [indexData])
+  
+  
+
+ 
+
+
 
   return (
     <Window id="catalog">
@@ -46,7 +64,8 @@ export default function Catalog() {
             {
               data.map((bc, i)=>{
                 return (
-                  <button key={`bc${bc.edition}`}  id={`bc${bc.edition}`} onClick={()=>handleClickSetIndexData(i)} className="block text-[12px]  hover:bg-indigo-950 w-full text-left border-t-1 border-b-1 border-t-indigo-600 bg-indigo-900  border-b-neutral-800 p-2 text-amber-300" title={`Revista N° ${bc.edition}`}><span className="bg-amber-500 text-black rounded-full px-1 font-bold" >N°{bc.edition}</span>   {bc.published} <div ><small className=" text-white">{bc.description}</small></div></button>
+                  <button key={`bc${bc.edition}`}  id={`bc${bc.edition}`} onClick={()=>handleClickSetIndexData(i)} className={`block text-[12px]  hover:bg-indigo-950 w-full text-left border-t-1 border-b-1 border-t-indigo-600 ${i === indexData ? "bg-indigo-950" : " bg-indigo-900" }  border-b-neutral-800 p-2 text-amber-300 `
+                   } title={`Revista N° ${bc.edition}`} ><span className="bg-amber-500 text-black rounded-full px-1 font-bold" >N°{bc.edition}</span>   {bc.published} <div ><small className=" text-white">{bc.description}</small></div></button>
                 )
               })
             }
@@ -54,9 +73,9 @@ export default function Catalog() {
         </div>
 
         {/*Magazines*/}
-        <section className="flex flex-col md:justify-between h-[340px]">
-          <div className="flex justify-center items-center w-[250px] h-[308px] border-ridge  bg-black">
-            <img src={data[indexData].cover} className=" w-[250px] h-full object-cover"/>
+        <section className="flex flex-col md:justify-between h-[400px] md:h-[340px]">
+          <div className="flex justify-center items-center w-full md:w-[250px] h-[400px] md:h-[308px] border-ridge  bg-black">
+            <img src={data[indexData].cover} className=" w-full md:w-[250px] h-full object-cover"/>
           </div>
           <div class="w-[250px] h-[25px] border-ridge bg-[#3541ab] overflow-hidden">
 
@@ -64,36 +83,34 @@ export default function Catalog() {
         </section>
 
         
-        <div className="flex flex-col justify-between  h-[340px]">
+        <div className="flex flex-col justify-between h-auto md:h-[340px]">
         {/*Videos*/}
-          <div className="w-[200px] h-[172px] border-ridge bg-black overflow-hidden">
-            <div className="bg-black text-amber-300 font-bold text-[1.2rem] text-center">Publicidad en TV</div>
+          <div className="w-full md:w-[200px] h-[260px] md:h-[172px] border-ridge bg-black overflow-hidden">
+            <div className="bg-black text-amber-300 font-bold text-[12px] text-center">Publicidad en TV</div>
             {
               data[indexData].video?
-                <video src={data[indexData].video} controls className="w-[200px] h-[150px]">
+                <video src={data[indexData].video} controls className=" md:w-[200px] md:h-[150px]">
               Tu navegador no admite el elemento video.
               </video> :
-              <img src={staticTv} className="w-[full] h-[full] object-cover"/>
+              <img src={staticTv} className="w-full  object-cover"/>
               
             }
           </div>
         {/*CD's*/}
-          <div className="w-[200px] h-[168px] bg-blue-900  border-ridge">
+          <div className="w-full h-[230px] md:w-[200px] md:h-[168px] bg-blue-900  border-ridge">
             <div className="bg-black text-amber-300 font-bold text-[12px] text-center">CD-Roms</div>
-            <div id="cds" className="flex flex-col justify-between h-[144px] items-center relative">
+            <div id="cds" className="flex flex-col justify-between  h-full md:h-[144px] items-center relative">
               {
-                
-                    <button className=" w-[150px] h-[120px] flex justify-center" onClick={()=>handleClickCD(data[indexData].gifts[indexGift].code)} ><img src={data[indexData].gifts[indexGift].preview} className=" w-[150px] h-[120px] object-contain"/>
-                    </button> 
-                
+                <button className=" w-[150px] h-[120px] flex justify-center" onClick={()=>handleClickCD(data[indexData].gifts[indexGift].code)} ><img src={data[indexData].gifts[indexGift].preview} className=" w-[150px] h-[120px] object-contain"/>
+                </button> 
               }
               {data[indexData].gifts.length > 1 &&
-              <p className="font-bold w-[40px] text-[12px] bg-neutral-800 border-1 text-blue-400 text-center absolute top-1 right-1 rounded-full">N°{indexGift+1}</p>}
+              <p className="font-bold w-[40px] text-[12px] bg-neutral-800 border-1 text-blue-400 text-center absolute top-1 right-1 rounded-full">N°{indexGift+1}
+              </p>
+              }
               <div className="flex justify-center items-center w-full h-[20px]">
-              
-                  
                 {data[indexData].gifts.length > 1 ?
-                <button onClick={handleClickNextGift}><img src={arrow} className="w-[80px] zoom" /></button>:<p className="text-gray-300 font-bold">Unico CD de regalo</p>}
+                <button onClick={handleClickNextGift} className="w-full flex justify-center"><img src={arrow} className="w-[30px] h-[20px] zoom" /><img src={arrow} className="w-[30px] h-[20px] zoom" /><img src={arrow} className="w-[30px] h-[20px] zoom" /></button>:<p className="text-gray-300 font-bold">Unico CD de regalo</p>}
               </div>
               
             </div>
@@ -104,7 +121,7 @@ export default function Catalog() {
       </section>
 
       <div className="h-[60px] flex items-center justify-end">
-        <NavLink to="/home"><img src={btnReturn} className="zoom w-[130px]"/></NavLink>
+        <NavLink to="/home"><img src={btnReturn} className="zoom w-[40px] h-[40px]"/></NavLink>
       </div>
     </Window>
   )

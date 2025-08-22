@@ -8,7 +8,8 @@ import { NavLink } from "react-router-dom";
 import iconWeb from '../assets/icon-web.png'
 import iconSteam from '../assets/icon-steam.png'
 import iconGog from '../assets/icon-gog.png'
-
+import arrowRight from '../assets/static-red-arrow-right.png'
+import arrowLeft from '../assets/static-red-arrow-left.png'
 
 
 export default function CD() {
@@ -33,9 +34,9 @@ export default function CD() {
             <img src={logo} className="w-[100px]"/>
             <h1 className="text-[18px] text-white text-right w-[500px]">{cdData.title}</h1>
         </div>
-        <section className="flex text-white justify-between " >
-          <section className="flex flex-col w-[370px] h-[340px] border-ridge bg-box">
-            <h1 className="bg-black text-amber-300 font-bold text-[1.2rem] text-center">Galeria de imágenes</h1>
+        <section className="flex text-white flex-col md:flex-row md:justify-between " >
+          <section className="flex flex-col w-full md:w-[370px] h-[340px] border-ridge bg-box">
+            <h1 className="bg-black text-amber-300 font-bold text-12px text-center">Galeria de imágenes</h1>
             <div>
               {
                 cdData.images
@@ -44,13 +45,13 @@ export default function CD() {
               }
               
             </div>
-            <div>
-              <button onClick={handleClickBack}>Anterior</button>
-              <button onClick={handleClickNext}>Siguiente</button>
+            <div className="flex justify-center items-center w-full h-[60px] gap-10">
+              <button onClick={handleClickBack}><img src={arrowLeft} className="w-[30px] h-[20px] zoom" /></button>
+              <button onClick={handleClickNext}><img src={arrowRight} className="w-[30px] h-[20px] zoom" /></button>
             </div>
           </section>
       
-          <div className="flex flex-col w-[300px] justify-between">
+          <div className="flex flex-col w-full md:w-[300px] justify-between">
             <div className="flex flex-col w-full border-ridge bg-box">
               <h2  className="bg-black text-amber-300 font-bold text-[12px] text-center">Contenido del CD-ROM</h2>
               <ul className=" w-full h-[230px] ">
@@ -103,7 +104,7 @@ export default function CD() {
        
       </section>
       <div className="h-[60px] flex items-center justify-end">
-        <NavLink to="/catalog"><img src={btnReturn} className="zoom w-[130px]"/></NavLink>
+        <NavLink to="/catalog"><img src={btnReturn} className="zoom  w-[40px] h-[40px]"/></NavLink>
       </div>
        
     </Window>
