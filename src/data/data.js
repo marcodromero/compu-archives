@@ -70,15 +70,15 @@ import bc26Cd02Preview from '../assets/gifs/bc26-cd02-preview.gif'
 import bc27Cd01Preview from '../assets/gifs/bc27-cd01-preview.gif'
 import bc27Cd02Preview from '../assets/gifs/bc27-cd02-preview.gif'
 
-import bc01Video from '../assets/videos/bc01-video-101999.mp4'
-import bc06Video from "../assets/videos/bc06-video-032000.mp4"
-import bc07Video from '../assets/videos/bc07-video-042000.mp4'
-import bc10Video from '../assets/videos/bc10-video-072000.mp4'
-import bc11Video from '../assets/videos/bc11-video-082000.mp4'
-import bc12Video from '../assets/videos/bc12-video-092000.mp4'
-import bc14Video from '../assets/videos/bc14-video-112000.mp4'
-import bc15Video from '../assets/videos/bc15-video-122000.mp4'
-import bc18Video from '../assets/videos/bc18-video-032001.mp4'
+import bc01Video from '../assets/videos/bc01-video-101999.webm'
+import bc06Video from "../assets/videos/bc06-video-032000.webm"
+import bc07Video from '../assets/videos/bc07-video-042000.webm'
+import bc10Video from '../assets/videos/bc10-video-072000.webm'
+import bc11Video from '../assets/videos/bc11-video-082000.webm'
+import bc12Video from '../assets/videos/bc12-video-092000.webm'
+import bc14Video from '../assets/videos/bc14-video-112000.webm'
+import bc15Video from '../assets/videos/bc15-video-122000.webm'
+import bc18Video from '../assets/videos/bc18-video-032001.webm'
 
 
 

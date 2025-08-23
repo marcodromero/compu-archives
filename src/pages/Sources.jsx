@@ -2,7 +2,7 @@ import Window from "../components/Window";
 import logo from '../assets/compu-logo.png'
 import btnReturn from '../assets/btn-return.png'
 import { NavLink } from "react-router-dom";
-import sources from "../data/sources";
+import sources from "../data/sources.js";
 
 export default function Sources() {
   return (
