@@ -6,7 +6,7 @@ import NotFoundPage from './pages/NotFoundPage'
 import Home from './pages/Home'
 import Catalog from './pages/Catalog'
 import CD from './pages/CD'
-import Sources from './pages/sources'
+import Sources from './pages/Sources'
 
 
 function App() {
