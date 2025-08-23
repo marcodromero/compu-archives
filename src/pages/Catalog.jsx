@@ -73,17 +73,17 @@ export default function Catalog() {
         </div>
 
         {/*Magazines*/}
-        <section className="flex flex-col md:justify-between h-[400px] md:h-[340px]">
+        <section className="flex flex-col md:justify-between h-[425px] md:h-[340px]">
           <div className="flex justify-center items-center w-full md:w-[250px] h-[400px] md:h-[308px] border-ridge  bg-black">
             <img src={data[indexData].cover} className=" w-full md:w-[250px] h-full object-cover"/>
           </div>
-          <div class="w-[250px] h-[25px] border-ridge bg-[#3541ab] overflow-hidden">
+          <div class="w-full md:w-[250px] h-[25px] border-ridge bg-[#3541ab] ">
 
           </div>
         </section>
 
         
-        <div className="flex flex-col justify-between h-auto md:h-[340px]">
+        <div className="flex flex-col justify-between  md:h-[340px]">
         {/*Videos*/}
           <div className="w-full md:w-[200px] h-[260px] md:h-[172px] border-ridge bg-black overflow-hidden">
             <div className="bg-black text-amber-300 font-bold text-[12px] text-center">Publicidad en TV</div>
@@ -97,18 +97,18 @@ export default function Catalog() {
             }
           </div>
         {/*CD's*/}
-          <div className="w-full h-[230px] md:w-[200px] md:h-[168px] bg-blue-900  border-ridge">
+          <div id="cds" className="w-full  md:w-[200px] md:h-[168px] bg-blue-900 border-ridge">
             <div className="bg-black text-amber-300 font-bold text-[12px] text-center">CD-Roms</div>
-            <div id="cds" className="flex flex-col justify-between  h-full md:h-[144px] items-center relative">
+            <div  className="flex flex-col justify-between  h-full md:h-[144px] items-center relative">
               {
-                <button className=" w-[150px] h-[120px] flex justify-center" onClick={()=>handleClickCD(data[indexData].gifts[indexGift].code)} ><img src={data[indexData].gifts[indexGift].preview} className=" w-[150px] h-[120px] object-contain"/>
+                <button className=" w-[250px] h-[200px] md:w-[150px] md:h-[120px] flex justify-center" onClick={()=>handleClickCD(data[indexData].gifts[indexGift].code)} ><img src={data[indexData].gifts[indexGift].preview} className=" w-[250px] h-[200px] md:w-[150px] md:h-[120px] object-contain"/>
                 </button> 
               }
               {data[indexData].gifts.length > 1 &&
               <p className="font-bold w-[40px] text-[12px] bg-neutral-800 border-1 text-blue-400 text-center absolute top-1 right-1 rounded-full">N°{indexGift+1}
               </p>
               }
-              <div className="flex justify-center items-center w-full h-[20px]">
+              <div className="flex justify-center items-center w-full h-[60px] md:h-[20px]">
                 {data[indexData].gifts.length > 1 ?
                 <button onClick={handleClickNextGift} className="w-full flex justify-center"><img src={arrow} className="w-[30px] h-[20px] zoom" /><img src={arrow} className="w-[30px] h-[20px] zoom" /><img src={arrow} className="w-[30px] h-[20px] zoom" /></button>:<p className="text-gray-300 font-bold">Unico CD de regalo</p>}
               </div>

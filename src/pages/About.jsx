@@ -14,7 +14,7 @@ export default function About() {
             <img src={logo} className="w-[100px]"/>
             <h1 className="text-[18px] text-white text-right w-[500px]">Sobre el proyecto</h1>
       </div>
-      <section className="flex flex-col md:flex-row md:justify-between">
+      <section className="flex flex-col md:flex-row md:justify-between gap-8 md:gap-0"  >
         <div className="w-full h-auto md:w-[440px] md:h-[340px]">
           <h1 className='text-[15px] font-bold  '>¿Qué fue Billiken Compu?</h1>
           <p className='my-4 text-[12px]'>
@@ -25,19 +25,21 @@ export default function About() {
           <p className='my-4 text-[12px]'>En 2022 realicé un nuevo <a href="https://web.archive.org/web/20220418143615/https://www.taringa.net/+juegos/billiken-compu-info-de-los-juegos-2022_4ztkc9" className="underline font-bold text-blue-900" target='_blank'>post en Taringa!</a> esta vez enfocado en recopilar información de cada edición de la revista y sus cds. </p>
           <h1 className='text-[15px] font-bold '>Sobre el contenido</h1>
           <p className='my-4 text-[12px]'>La información ha sido recopilada de diferentes fuentes que puedes consultar pulsando el siguiente botón.</p>
-          <NavLink to="/fuentes" className="md:w-[186px] flex justify-start"><img src={btnSources} className="w-1/2 h-full md:w-[100px] zoom"/></NavLink>
+          <NavLink to="/fuentes" className="md:w-[100px] flex justify-start"><img src={btnSources} className="w-1/3 h-full md:w-[100px] zoom"/></NavLink>
         </div>
       
         <div className="w-full md:w-[220px] h-[340px]  flex flex-col border-ridge bg-box">
           <div className="bg-black text-amber-300 font-bold text-[12px] text-center">AÚN SE NECESITA</div>
           <div className="w-full h-full overflow-y-auto  text-[12px] ">
+            <ul>
             {
               todo.map((item)=>{
                 return(
-                  <ul><li className=" m-4">🔸 {item}</li></ul>
+                  <li className="m-4">🔸 {item}</li>
                 )
               })
             }
+            </ul>
         </div>
       </div>
     </section>

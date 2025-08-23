@@ -12,16 +12,18 @@ export default function Sources() {
             <h1 className="text-[18px] text-white text-right w-[500px]">Fuentes</h1>
       </div>
       <section>
-        <div className="w-full md:w-full h-[340px]  flex flex-col border-ridge bg-box">
+        <div className="w-full md:w-full h-full md:h-[340px]  flex flex-col border-ridge bg-box">
                   <div className="bg-black text-amber-300 font-bold text-[12px] text-center">Se obtuvo información e imágenes de los siguientes sitios</div>
                   <div className="w-full h-full overflow-y-auto  text-[12px] ">
+                    <ul className="m-4 flex flex-col gap-4">
                     {
                       sources.map((item,i)=>{
                         return(
-                          <div key={i}><a href={item.url}>🔗 {item.description}</a></div>
+                          <li key={i}>🔗 <a href={item.url} className="font-bold text-neutral-200 text-[14px] md:text-[12px]"> {item.description}</a></li>
                         )
                       })
                     }
+                    </ul>
                 </div>
               </div>
       </section>
