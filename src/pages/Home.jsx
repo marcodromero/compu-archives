@@ -15,9 +15,9 @@ export default function Home() {
       <div className='h-[400px]  flex flex-col justify-center items-center gap-4'>
          <img src={compuLogo} className='w-7/8 md:w-[394px]'/>
          <nav className="w-full flex-column md:flex items-center gap-8 mt-2 h-[40px]">
-            <NavLink to="/catalog" className="md:w-[186px] flex justify-center" ><img src={btnRyc} className="w-1/2 h-full md:w-[186px] zoom"/></NavLink>
-            <NavLink to="/about" className="md:w-[186px] flex justify-center"><img src={btnLinks} className="w-1/2 h-full md:w-[186px] zoom"/></NavLink>
-            <NavLink to="/guestbook" className="md:w-[186px] flex justify-center"><img src={btnGuestbook} className="w-1/2 h-full md:w-[186px] zoom"/></NavLink>
+            <NavLink to="/revistas" className="md:w-[186px] flex justify-center" ><img src={btnRyc} className="w-1/2 h-full md:w-[186px] zoom"/></NavLink>
+            <NavLink to="/acerca" className="md:w-[186px] flex justify-center"><img src={btnLinks} className="w-1/2 h-full md:w-[186px] zoom"/></NavLink>
+            <NavLink to="/comentarios" className="md:w-[186px] flex justify-center"><img src={btnGuestbook} className="w-1/2 h-full md:w-[186px] zoom"/></NavLink>
           </nav>
       </div>
       <div className='flex flex-col justify-center md:flex-row md:justify-between items-center w-full'>

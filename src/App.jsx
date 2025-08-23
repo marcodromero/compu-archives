@@ -6,16 +6,18 @@ import NotFoundPage from './pages/NotFoundPage'
 import Home from './pages/Home'
 import Catalog from './pages/Catalog'
 import CD from './pages/CD'
+import Sources from './pages/sources'
+
 
 function App() {
   return (
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Navigate to="/home"/>}/>
-          <Route path="/home" element={<Home />}/>
-          <Route path="/catalog" element={<Catalog />}/>
-          <Route path="/guestbook" element={<Guestbook />}/>
-          <Route path="/about" element={<About />}/>
+          <Route path="/" element={<Home />}/>
+          <Route path="/revistas" element={<Catalog />}/>
+          <Route path="/comentarios" element={<Guestbook />}/>
+          <Route path="/acerca" element={<About />}/>
+          <Route path="/fuentes" element={<Sources />}/>
           <Route path="/cd/:code" element={<CD />}/>
           <Route path="*" element={<NotFoundPage />}/>
         </Routes>

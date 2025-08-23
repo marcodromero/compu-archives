@@ -96,7 +96,7 @@ export default[
     cover: bcCover02,
     published: "Noviembre de 1999",
     gifts:[{code:"bc02cd01", preview:bc02Cd01Preview}],
-    description:"S.A.R: Helicopteros de búsqueda y rescate"
+    description:"S.A.R: Helicópteros de búsqueda y rescate"
   },
   {
     edition: "03",

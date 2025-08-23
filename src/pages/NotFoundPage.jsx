@@ -5,14 +5,14 @@ import { NavLink } from "react-router-dom";
 
 export default function NotFoundPage() {
   return (
-    <Window id="links">
+    <Window id="notFound">
       <div className="h-[60px] flex items-center justify-between">
             <img src={logo} className="w-[100px]"/>
           
       </div>
       <div className="flex flex-col justify-center items-center h-[300px]">
         <h1 className="text-[24px] font-bold">La página que buscás no existe.</h1>
-        <NavLink to="/home" className="w-[186px] "><img src={btnHome}/></NavLink>
+        <NavLink to="/" className="w-[186px] zoom"><img src={btnHome}/></NavLink>
       </div>
     </Window>
   )

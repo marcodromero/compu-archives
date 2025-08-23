@@ -121,7 +121,7 @@ export default function Catalog() {
       </section>
 
       <div className="h-[60px] flex items-center justify-end">
-        <NavLink to="/home"><img src={btnReturn} className="zoom w-[40px] h-[40px]"/></NavLink>
+        <NavLink to="/"><img src={btnReturn} className="zoom w-[40px] h-[40px]"/></NavLink>
       </div>
     </Window>
   )

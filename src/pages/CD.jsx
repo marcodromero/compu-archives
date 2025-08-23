@@ -36,7 +36,7 @@ export default function CD() {
         </div>
         <section className="flex text-white flex-col md:flex-row md:justify-between " >
           <section className="flex flex-col w-full md:w-[370px] h-[340px] border-ridge bg-box">
-            <h1 className="bg-black text-amber-300 font-bold text-12px text-center">Galeria de imágenes</h1>
+            <h1 className="bg-black text-amber-300 font-bold text-[12px] text-center">Galeria de imágenes</h1>
             <div>
               {
                 cdData.images
@@ -104,7 +104,7 @@ export default function CD() {
        
       </section>
       <div className="h-[60px] flex items-center justify-end">
-        <NavLink to="/catalog"><img src={btnReturn} className="zoom  w-[40px] h-[40px]"/></NavLink>
+        <NavLink to="/revistas"><img src={btnReturn} className="zoom  w-[40px] h-[40px]"/></NavLink>
       </div>
        
     </Window>
