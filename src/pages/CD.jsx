@@ -22,8 +22,8 @@ const {index, cdData, handleClickNext, handleClickBack} = useCDGallery();
               
             </div>
             <div className="flex justify-center items-center w-full h-[60px] gap-10">
-              <button onClick={handleClickBack}><img src={arrowLeft} className="w-[30px] h-[20px] zoom" alt="Mostrar imagen anterior del CD"/></button>
-              <button onClick={handleClickNext}><img src={arrowRight} className="w-[30px] h-[20px] zoom" alt="Mostrar imagen siguiente del CD" /></button>
+              <button onClick={handleClickBack}><img src={arrowLeft} className="w-[30px] h-[20px] object-contain zoom" alt="Mostrar imagen anterior del CD"/></button>
+              <button onClick={handleClickNext}><img src={arrowRight} className="w-[30px] h-[20px] object-contain zoom" alt="Mostrar imagen siguiente del CD" /></button>
             </div>
           </section>
       
