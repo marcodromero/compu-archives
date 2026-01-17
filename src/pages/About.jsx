@@ -1,19 +1,15 @@
-
 import Window from "../components/Window";
-import logo from '../assets/compu-logo.png'
 import todo from '../data/todo'
 import btnReturn from '../assets/btn-return.png'
 import btnSources from '../assets/btn-sources.png'
 import { NavLink } from "react-router-dom";
+import Header from "../components/Header";
 
 export default function About() {
   
   return (
     <Window id="about">
-      <div className="h-[60px] flex items-center justify-between">
-            <img src={logo} className="w-[100px]"/>
-            <h1 className="text-[18px] text-white text-right w-[500px]">Sobre el proyecto</h1>
-      </div>
+      <Header title="Sobre el proyecto"/>
       <section className="flex flex-col md:flex-row md:justify-between gap-8 md:gap-0"  >
         <div className="w-full h-auto md:w-[440px] md:h-[340px]">
           <h1 className='text-[15px] font-bold  '>¿Qué fue Billiken Compu?</h1>
@@ -45,7 +41,7 @@ export default function About() {
     </section>
 
       <div className="h-[60px] flex items-center justify-end">
-        <NavLink to="/"><img src={btnReturn} className="zoom  w-[40px] h-[40px]"/></NavLink>
+        <NavLink to="/"><img src={btnReturn} className="zoom  w-[40px] h-[40px]" alt="Ir a la página principal del sitio"/></NavLink>
       </div>
     </Window>
   )

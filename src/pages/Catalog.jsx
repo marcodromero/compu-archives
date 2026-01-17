@@ -7,19 +7,15 @@ import {
   MagazineList
 } from "../components"
 import useCatalogo from "../custom/useCatalogo";
-import logo from '../assets/compu-logo.png'
 import btnReturn from '../assets/btn-return.png'
+import Header from "../components/Header";
 
 export default function Catalog() {
   const {idMagazine, magazines, currentCD, currentCDNumber, currentMagazine, totalCDs, handleSelectMagazine, handleShowNextCD} = useCatalogo();
  
   return (
     <Window id="catalog">
-      <div className="h-[60px] flex items-center justify-between">
-        <img src={logo} className="w-[100px]" alt=""/>
-        <h1 className="text-[18px] text-white text-right w-[500px]">Revistas y CD-Roms</h1>
-      </div>
-      
+      <Header title="Revistas y CD-Roms"/>
       <section className="flex flex-col md:flex-row md:justify-around">
         <MagazineList magazines= {magazines} handleSelectMagazine ={handleSelectMagazine} idMagazine={idMagazine}/>
 

@@ -1,20 +1,17 @@
 import Window from "../components/Window";
-import logo from '../assets/compu-logo.png'
 import btnReturn from '../assets/btn-return.png'
 import { NavLink } from "react-router-dom";
 import arrowRight from '../assets/static-red-arrow-right.png'
 import arrowLeft from '../assets/static-red-arrow-left.png'
 import { useCDGallery } from "../custom/useCDGallery";
 import Stores from "../components/Stores";
+import Header from "../components/Header";
 
 export default function CD() {
 const {index, cdData, handleClickNext, handleClickBack} = useCDGallery();
   return (
      <Window id="cd">
-        <div className="h-[60px] flex items-center justify-between">
-          <img src={logo} className="w-[100px]" alt=""/>
-          <h1 className="text-[18px] text-white text-right w-[500px]">{cdData.title}</h1>
-        </div>
+        <Header title={cdData.title}/>
         <section className="flex text-white flex-col md:flex-row md:justify-between " >
           <section className="flex flex-col w-full md:w-[370px] h-[340px] border-ridge bg-box">
             <h1 className="bg-black text-amber-300 font-bold text-[12px] text-center">Galeria de imágenes</h1>

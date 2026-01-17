@@ -1,16 +1,13 @@
 import Window from "../components/Window";
-import logo from '../assets/compu-logo.png'
 import btnReturn from '../assets/btn-return.png'
 import { NavLink } from "react-router-dom";
 import sources from "../data/sources.js";
+import Header from "../components/Header.jsx";
 
 export default function Sources() {
   return (
     <Window id="sources">
-      <div className="h-[60px] flex items-center justify-between">
-            <img src={logo} className="w-[100px]" alt=""/>
-            <h1 className="text-[18px] text-white text-right w-[500px]">Fuentes</h1>
-      </div>
+      <Header title="Fuentes"/>
       <section>
         <div className="w-full md:w-full h-full md:h-[340px]  flex flex-col border-ridge bg-box">
                   <div className="bg-black text-amber-300 font-bold text-[12px] text-center">Se obtuvo información e imágenes de los siguientes sitios</div>
