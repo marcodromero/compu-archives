@@ -1,4 +1,4 @@
-import staticTv from '../assets/static-tv.gif'
+import staticTv from '../assets/static-tv.webp'
 
 export default function Videos({src}) {
   return (

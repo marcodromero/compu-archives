@@ -1,5 +1,5 @@
 import Window from "../components/Window";
-import btnReturn from '../assets/btn-return.png'
+import btnReturn from '../assets/btn-return.webp'
 import { NavLink } from "react-router-dom";
 import sources from "../data/sources.js";
 import Header from "../components/Header.jsx";

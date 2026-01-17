@@ -1,11 +1,11 @@
 import { Window } from '../components';
 import { NavLink } from "react-router-dom";
-import compuLogo from '../assets/compu-logo.png'
-import buttonVsc from '../assets/btn-vsc.png'
-import buttonComputer from '../assets/btn-computer.gif'
-import btnRyc from '../assets/btn-ryc.png';
-import btnLinks from '../assets/btn-links.png'
-import btnGuestbook from '../assets/btn-guestbook.png'
+import compuLogo from '../assets/compu-logo.webp'
+import buttonVsc from '../assets/btn-vsc.webp'
+import buttonComputer from '../assets/btn-computer.webp'
+import btnRyc from '../assets/btn-ryc.webp';
+import btnLinks from '../assets/btn-links.webp'
+import btnGuestbook from '../assets/btn-guestbook.webp'
 
 export default function Home() {
   return (

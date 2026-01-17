@@ -33,15 +33,13 @@ body {
    transform: scale(1.1);
 }
 
-
-
 .bg-box{
   background-color:#312c85;
   color: #f7f9fb;
 }
 
 #cds{
-   background-image: url("./assets/bg-move.gif");
+   background-image: url("./assets/bg-move.webp");
    background-repeat: no-repeat;
    background-size:cover;
 }
@@ -55,7 +53,7 @@ body {
 @media (min-width: 580px) {
 
   #catalog, #cd, #home, #about, #guestbook, #sources, #notFound{
-    background-image: url("./assets/bg-menu2b.png");
+    background-image: url("./assets/bg-menu2b.webp");
     background-repeat: no-repeat;
     background-size:cover;
   }

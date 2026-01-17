@@ -1,6 +1,6 @@
-import iconWeb from '../assets/icon-web.png'
-import iconSteam from '../assets/icon-steam.png'
-import iconGog from '../assets/icon-gog.png'
+import iconWeb from '../assets/icon-web.webp'
+import iconSteam from '../assets/icon-steam.webp'
+import iconGog from '../assets/icon-gog.webp'
 
 export default function StoreIcons({cdData}) {
   const hasStore = cdData.steam || cdData.gog || cdData.website || cdData.wish;

@@ -1,7 +1,7 @@
 import {Window, Header} from "../components";
 import todo from '../data/todo'
-import btnReturn from '../assets/btn-return.png'
-import btnSources from '../assets/btn-sources.png'
+import btnReturn from '../assets/btn-return.webp'
+import btnSources from '../assets/btn-sources.webp'
 import { NavLink } from "react-router-dom";
 
 export default function About() {

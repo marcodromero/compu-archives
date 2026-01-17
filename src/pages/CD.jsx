@@ -1,9 +1,9 @@
 import { NavLink } from "react-router-dom";
 import { Window , Stores, Header } from "../components";
 import { useCDGallery } from "../custom/useCDGallery";
-import btnReturn from '../assets/btn-return.png'
-import arrowRight from '../assets/static-red-arrow-right.png'
-import arrowLeft from '../assets/static-red-arrow-left.png'
+import btnReturn from '../assets/btn-return.webp'
+import arrowRight from '../assets/static-red-arrow-right.webp'
+import arrowLeft from '../assets/static-red-arrow-left.webp'
 
 export default function CD() {
 const {index, cdData, handleClickNext, handleClickBack} = useCDGallery();

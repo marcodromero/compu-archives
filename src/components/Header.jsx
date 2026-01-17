@@ -1,4 +1,4 @@
-import logo from '../assets/compu-logo.png'
+import logo from '../assets/compu-logo.webp'
 
 export default function Header({title}) {
   return (

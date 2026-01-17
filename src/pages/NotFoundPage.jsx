@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { Window, Header } from "../components";
-import btnHome from '../assets/btn-home.png'
+import btnHome from '../assets/btn-home.webp'
 
 export default function NotFoundPage() {
   return (

@@ -8,7 +8,7 @@ import {
   Window,
 } from "../components"
 import useCatalogo from "../custom/useCatalogo";
-import btnReturn from '../assets/btn-return.png'
+import btnReturn from '../assets/btn-return.webp'
 
 export default function Catalog() {
   const {idMagazine, magazines, currentCD, currentCDNumber, currentMagazine, totalCDs, handleSelectMagazine, handleShowNextCD} = useCatalogo();
