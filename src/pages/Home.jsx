@@ -14,9 +14,9 @@ export default function Home() {
       <div className='h-[400px]  flex flex-col justify-center items-center gap-4'>
          <img src={compuLogo} className='w-7/8 md:w-[394px]' alt='Archivos compu'/>
          <nav className="w-full flex-column md:flex items-center md:gap-8 mt-2 h-[40px]">
-            <NavLink to="/revistas" className="md:w-[186px] flex justify-center mb-[12px] md:mb-0" ><img src={btnRyc} className="w-2/3 h-full md:w-[186px] zoom" alt='Ingresar al catálogo de revistas'/></NavLink>
-            <NavLink to="/acerca" className="md:w-[186px] flex justify-center mb-[12px] md:mb-0" ><img src={btnLinks} className="w-2/3 h-full md:w-[186px] zoom" alt="Ingresar a los detalles del proyecto"/></NavLink>
-            <NavLink to="/comentarios" className="md:w-[186px] flex justify-center mb-[12px] md:mb-0"><img src={btnGuestbook} className="w-2/3 h-full md:w-[186px] zoom" alt="Ingresar al libro de visitas"/></NavLink>
+            <NavLink to="/revistas" className="md:w-[186px] flex justify-center mb-[12px] md:mb-0" ><img src={btnRyc} className="w-2/3 h-full md:w-[186px] tiny-zoom" alt='Ingresar al catálogo de revistas'/></NavLink>
+            <NavLink to="/acerca" className="md:w-[186px] flex justify-center mb-[12px] md:mb-0" ><img src={btnLinks} className="w-2/3 h-full md:w-[186px] tiny-zoom" alt="Ingresar a los detalles del proyecto"/></NavLink>
+            <NavLink to="/comentarios" className="md:w-[186px] flex justify-center mb-[12px] md:mb-0"><img src={btnGuestbook} className="w-2/3 h-full md:w-[186px] tiny-zoom" alt="Ingresar al libro de visitas"/></NavLink>
           </nav>
       </div>
       <div className='flex flex-col justify-center md:flex-row md:justify-between items-center w-full gap-8 md:gap-0'>

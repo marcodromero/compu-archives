@@ -19,7 +19,7 @@ export default function About() {
           <p className='my-4 text-[12px]'>En 2022 realicé un nuevo <a href="https://web.archive.org/web/20220418143615/https://www.taringa.net/+juegos/billiken-compu-info-de-los-juegos-2022_4ztkc9" className="underline font-bold text-blue-900" target='_blank' aria-label="Mi post en Taringa del 2022">post en Taringa!</a> esta vez enfocado en recopilar información de cada edición de la revista y sus cds. </p>
           <h1 className='text-[15px] font-bold '>Sobre el contenido</h1>
           <p className='my-4 text-[12px]'>La información ha sido recopilada de diferentes fuentes que puedes consultar pulsando el siguiente botón.</p>
-          <NavLink to="/fuentes" className="md:w-[100px] flex justify-start"><img src={btnSources} className="w-1/3 h-full md:w-[100px] zoom" alt="Ir a la lista de fuentes"/></NavLink>
+          <NavLink to="/fuentes" className="md:w-[100px] flex justify-start"><img src={btnSources} className="w-1/3 h-full md:w-[100px] tiny-zoom" alt="Ir a la lista de fuentes"/></NavLink>
         </div>
       
         <div className="w-full md:w-[220px] h-[340px]  flex flex-col border-ridge bg-box">
@@ -39,7 +39,7 @@ export default function About() {
     </section>
 
       <div className="h-[60px] flex items-center justify-end">
-        <NavLink to="/"><img src={btnReturn} className="zoom  w-[40px] h-[40px]" alt="Ir a la página principal del sitio"/></NavLink>
+        <NavLink to="/"><img src={btnReturn} className="tiny-zoom  w-[40px] h-[40px]" alt="Ir a la página principal del sitio"/></NavLink>
       </div>
     </Window>
   )

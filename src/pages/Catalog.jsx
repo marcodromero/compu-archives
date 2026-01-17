@@ -31,7 +31,7 @@ export default function Catalog() {
       </section>
 
       <div className="h-[60px] flex items-center justify-end">
-        <NavLink to="/"><img src={btnReturn} className="zoom w-[40px] h-[40px]" alt="Ir a la página principal del sitio"/></NavLink>
+        <NavLink to="/"><img src={btnReturn} className="tiny-zoom w-[40px] h-[40px]" alt="Ir a la página principal del sitio"/></NavLink>
       </div>
     </Window>
   )

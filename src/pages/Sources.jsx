@@ -25,7 +25,7 @@ export default function Sources() {
               </div>
       </section>
       <div className="h-[60px] flex items-center justify-end">
-        <NavLink to="/acerca"><img src={btnReturn} className="zoom  w-[40px] h-[40px]" alt="Volver a los detalles del proyecto"/></NavLink>
+        <NavLink to="/acerca"><img src={btnReturn} className="tiny-zoom  w-[40px] h-[40px]" alt="Volver a los detalles del proyecto"/></NavLink>
       </div>
     </Window>
   )

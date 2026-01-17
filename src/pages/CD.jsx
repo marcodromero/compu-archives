@@ -22,8 +22,8 @@ const {index, cdData, handleClickNext, handleClickBack} = useCDGallery();
               
             </div>
             <div className="flex justify-center items-center w-full h-[60px] gap-10">
-              <button onClick={handleClickBack}><img src={arrowLeft} className="w-[30px] h-[20px] object-contain zoom" alt="Mostrar imagen anterior del CD"/></button>
-              <button onClick={handleClickNext}><img src={arrowRight} className="w-[30px] h-[20px] object-contain zoom" alt="Mostrar imagen siguiente del CD" /></button>
+              <button onClick={handleClickBack}><img src={arrowLeft} className="w-[30px] h-[20px] object-contain big-zoom" alt="Mostrar imagen anterior del CD"/></button>
+              <button onClick={handleClickNext}><img src={arrowRight} className="w-[30px] h-[20px] object-contain big-zoom" alt="Mostrar imagen siguiente del CD" /></button>
             </div>
           </section>
       
@@ -49,7 +49,7 @@ const {index, cdData, handleClickNext, handleClickBack} = useCDGallery();
        
       </section>
       <div className="h-[60px] flex items-center justify-end">
-        <NavLink to="/revistas"><img src={btnReturn} className="zoom  w-[40px] h-[40px]" alt="Volver al catalogo de revistas"/></NavLink>
+        <NavLink to="/revistas"><img src={btnReturn} className="tiny-zoom  w-[40px] h-[40px]" alt="Volver al catalogo de revistas"/></NavLink>
       </div>
        
     </Window>

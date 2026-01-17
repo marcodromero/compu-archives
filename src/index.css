@@ -25,12 +25,16 @@ body {
   border: 4px ridge #5061ff;
 }
 
-.zoom{
+.tiny-zoom ,.big-zoom{
    transition: 1s;
 }
 
-.zoom:hover{
-   transform: scale(1.8);
+.tiny-zoom:hover{
+   transform: scale(1.1);
+}
+
+.big-zoom:hover{
+  transform: scale(1.8);
 }
 
 .bg-box{
