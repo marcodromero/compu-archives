@@ -18,7 +18,7 @@ export default function CDGallery({handleShowNextCD, currentCD, totalCDs, curren
         }
         <div className="flex justify-center items-center w-full h-[60px] md:h-[20px]">
           {totalCDs > 1 ?
-          <button onClick={handleShowNextCD} className="w-full flex justify-center"><img src={arrow} className="w-[30px] h-[20px] zoom" /><img src={arrow} className="w-[30px] h-[20px] zoom" alt="Pasar al siguiente CD" /><img src={arrow} className="w-[30px] h-[20px] zoom" alt=""/></button>:<p className="text-gray-300 font-bold">Unico CD de regalo</p>}
+          <button onClick={handleShowNextCD} className="w-full flex justify-center"><img src={arrow} className="w-[30px] h-[20px] zoom" alt="Pasar al siguiente CD"/><img src={arrow} className="w-[30px] h-[20px] zoom" alt="" /><img src={arrow} className="w-[30px] h-[20px] zoom" alt=""/></button>:<p className="text-gray-300 font-bold">Unico CD de regalo</p>}
         </div>
       </div>
     </div>
