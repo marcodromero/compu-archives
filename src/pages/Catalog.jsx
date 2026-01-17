@@ -1,14 +1,14 @@
 import { NavLink } from "react-router-dom";
 import { 
-  Window,
-  Videos,
   CDGallery,
   Covers,
-  MagazineList
+  Header,
+  MagazineList,
+  Videos,
+  Window,
 } from "../components"
 import useCatalogo from "../custom/useCatalogo";
 import btnReturn from '../assets/btn-return.png'
-import Header from "../components/Header";
 
 export default function Catalog() {
   const {idMagazine, magazines, currentCD, currentCDNumber, currentMagazine, totalCDs, handleSelectMagazine, handleShowNextCD} = useCatalogo();
@@ -31,7 +31,7 @@ export default function Catalog() {
       </section>
 
       <div className="h-[60px] flex items-center justify-end">
-        <NavLink to="/"><img src={btnReturn} className="zoom w-[40px] h-[40px]" alt="Volver al inicio"/></NavLink>
+        <NavLink to="/"><img src={btnReturn} className="zoom w-[40px] h-[40px]" alt="Ir a la página principal del sitio"/></NavLink>
       </div>
     </Window>
   )

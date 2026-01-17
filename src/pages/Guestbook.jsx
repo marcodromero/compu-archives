@@ -1,7 +1,6 @@
-import Window from "../components/Window";
-import btnReturn from '../assets/btn-return.png'
 import { NavLink } from "react-router-dom";
-import Header from "../components/Header";
+import {Window, Header} from "../components/Window";
+import btnReturn from '../assets/btn-return.png'
 
 export default function Guestbook() {
   return (
@@ -15,7 +14,7 @@ export default function Guestbook() {
           </iframe>
       </section>
        <div className="h-[60px] flex items-center justify-end">
-        <NavLink to="/"><img src={btnReturn} className="zoom  w-[40px] h-[40px]" alt="Ir a la pagina de inicio"/></NavLink>
+        <NavLink to="/"><img src={btnReturn} className="zoom  w-[40px] h-[40px]" alt="Ir a la página de inicio"/></NavLink>
       </div>
     </Window>
   )

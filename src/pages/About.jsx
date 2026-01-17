@@ -1,12 +1,10 @@
-import Window from "../components/Window";
+import {Window, Header} from "../components";
 import todo from '../data/todo'
 import btnReturn from '../assets/btn-return.png'
 import btnSources from '../assets/btn-sources.png'
 import { NavLink } from "react-router-dom";
-import Header from "../components/Header";
 
 export default function About() {
-  
   return (
     <Window id="about">
       <Header title="Sobre el proyecto"/>

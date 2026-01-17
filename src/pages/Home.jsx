@@ -1,9 +1,8 @@
-
+import { Window } from '../components';
+import { NavLink } from "react-router-dom";
 import compuLogo from '../assets/compu-logo.png'
 import buttonVsc from '../assets/btn-vsc.png'
 import buttonComputer from '../assets/btn-computer.gif'
-import Window from '../components/Window';
-import { NavLink } from "react-router-dom";
 import btnRyc from '../assets/btn-ryc.png';
 import btnLinks from '../assets/btn-links.png'
 import btnGuestbook from '../assets/btn-guestbook.png'
@@ -22,7 +21,7 @@ export default function Home() {
       </div>
       <div className='flex flex-col justify-center md:flex-row md:justify-between items-center w-full gap-8 md:gap-0'>
         <div className='flex items-center gap-3'><img src={buttonVsc} alt=""/><img src={buttonComputer} alt=""/></div>
-         <a href='https://cafecito.app/lobitodev' rel='noopener' target='_blank'><img srcset='https://cdn.cafecito.app/imgs/buttons/button_5.png 1x, https://cdn.cafecito.app/imgs/buttons/button_5_2x.png 2x, https://cdn.cafecito.app/imgs/buttons/button_5_3.75x.png 3.75x' src='https://cdn.cafecito.app/imgs/buttons/button_5.png' alt='Ir a cafecito.app para hacer una donación' className='w-[150px] zoom'/></a>
+         <a href='https://cafecito.app/lobitodev' rel='noopener' target='_blank'><img srcset='https://cdn.cafecito.app/imgs/buttons/button_5.png 1x, https://cdn.cafecito.app/imgs/buttons/button_5_2x.png 2x, https://cdn.cafecito.app/imgs/buttons/button_5_3.75x.png 3.75x' src='https://cdn.cafecito.app/imgs/buttons/button_5.png' alt='Ir al sitio web cafecito.app para hacer una donación' className='w-[150px] zoom'/></a>
       </div>
      
     </section>

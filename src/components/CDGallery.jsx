@@ -1,7 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import arrow from '../assets/red-arrow-right.gif'
 
-
 export default function CDGallery({handleShowNextCD, currentCD, totalCDs, currentCDNumber}) {
   const navigate = useNavigate();
   return (

@@ -1,11 +1,9 @@
-import Window from "../components/Window";
-import btnReturn from '../assets/btn-return.png'
 import { NavLink } from "react-router-dom";
+import { Window , Stores, Header } from "../components";
+import { useCDGallery } from "../custom/useCDGallery";
+import btnReturn from '../assets/btn-return.png'
 import arrowRight from '../assets/static-red-arrow-right.png'
 import arrowLeft from '../assets/static-red-arrow-left.png'
-import { useCDGallery } from "../custom/useCDGallery";
-import Stores from "../components/Stores";
-import Header from "../components/Header";
 
 export default function CD() {
 const {index, cdData, handleClickNext, handleClickBack} = useCDGallery();
