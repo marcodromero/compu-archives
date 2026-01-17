@@ -7,12 +7,12 @@ export default function NotFoundPage() {
   return (
     <Window id="notFound">
       <div className="h-[60px] flex items-center justify-between">
-            <img src={logo} className="w-[100px]"/>
+            <img src={logo} className="w-[100px]" alt=""/>
           
       </div>
       <div className="flex flex-col justify-center items-center h-[300px]">
         <h1 className="text-[24px] font-bold">La página que buscás no existe.</h1>
-        <NavLink to="/" className="w-[186px] zoom"><img src={btnHome}/></NavLink>
+        <NavLink to="/" className="w-[186px] zoom"><img src={btnHome} alt="Ir a la pagina de inicio"/></NavLink>
       </div>
     </Window>
   )

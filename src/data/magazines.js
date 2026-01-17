@@ -80,14 +80,12 @@ import bc14Video from '../assets/videos/bc14-video-112000.mp4'
 import bc15Video from '../assets/videos/bc15-video-122000.mp4'
 import bc18Video from '../assets/videos/bc18-video-032001.mp4'
 
-
-
 export default[
   {
     edition: "01",
     cover: bcCover01,
     published: "Octubre de 1999",
-    gifts:[{code:"bc01cd01", preview:bc01Cd01Preview}, {code:"bc01cd02", preview:bc01Cd02Preview}],
+    cds:[{code:"bc01cd01", preview:bc01Cd01Preview}, {code:"bc01cd02", preview:bc01Cd02Preview}],
     video:[bc01Video],
     description:"Claw + Encarta 2000 (Demo)"
   },
@@ -95,35 +93,35 @@ export default[
     edition: "02",
     cover: bcCover02,
     published: "Noviembre de 1999",
-    gifts:[{code:"bc02cd01", preview:bc02Cd01Preview}],
+    cds:[{code:"bc02cd01", preview:bc02Cd01Preview}],
     description:"S.A.R: Helicópteros de búsqueda y rescate"
   },
   {
     edition: "03",
     cover: bcCover03,
     published: "Diciembre de 1999",
-    gifts:[{code:"bc03cd01", preview:bc03Cd01Preview},{code:"bc03cd02", preview:bc03Cd02Preview}],
+    cds:[{code:"bc03cd01", preview:bc03Cd01Preview},{code:"bc03cd02", preview:bc03Cd02Preview}],
     description:"Super bike racing + 4 Demos"
   },
   {
     edition: "04",
     cover: bcCover04,
     published: "Enero de 2000",
-    gifts:[{code:"bc04cd01", preview:bc04Cd01Preview}],
+    cds:[{code:"bc04cd01", preview:bc04Cd01Preview}],
     description:"El Diablo de Halloween + Supertrucos"
   },
   {
     edition: "05",
     cover: bcCover05,
     published: "Febrero de 2000",
-    gifts:[{code:"bc05cd01", preview:bc05Cd01Preview}],
+    cds:[{code:"bc05cd01", preview:bc05Cd01Preview}],
     description:"Snowmobile Championship 2000"
   },
   {
     edition: "06",
     cover: bcCover06,
     published: "Marzo de 2000",
-    gifts:[{code:"bc06cd01", preview:bc06Cd01Preview}],
+    cds:[{code:"bc06cd01", preview:bc06Cd01Preview}],
     video:[bc06Video],
     description:"Diccionario Elemental Multilenguaje"
   },
@@ -131,7 +129,7 @@ export default[
     edition: "07",
     cover: bcCover07,
     published: "Abril de 2000",
-    gifts:[{code:"bc07cd01", preview:bc07Cd01Preview}],
+    cds:[{code:"bc07cd01", preview:bc07Cd01Preview}],
     video:[bc07Video],
     description:"Eliminatorias Europeas"
   },
@@ -139,21 +137,21 @@ export default[
     edition: "08",
     cover: bcCover08,
     published: "Mayo de 2000",
-    gifts:[{code:"bc08cd01", preview:bc08Cd01Preview }],
+    cds:[{code:"bc08cd01", preview:bc08Cd01Preview }],
     description:"Oddworld Aby's odysee"
   },
   {
     edition: "09",
     cover: bcCover09,
     published: "Junio de 2000",
-    gifts:[{code:"bc09cd01", preview:bc09Cd01Preview}],
+    cds:[{code:"bc09cd01", preview:bc09Cd01Preview}],
     description:"Creatures + 2 Antivirus"
   },
   {
     edition: "10",
     cover: bcCover10,
     published: "Julio de 2000",
-    gifts:[{code:"bc10cd01" , preview:bc10Cd01Preview}],
+    cds:[{code:"bc10cd01" , preview:bc10Cd01Preview}],
     video:[bc10Video],
     description:"Lode runner 2 + Fotos de la NASA"
   },
@@ -161,7 +159,7 @@ export default[
     edition: "11",
     cover: bcCover11,
     published: "Agosto de 2000",
-    gifts:[{code:"bc11cd01", preview:bc11Cd01Preview}],
+    cds:[{code:"bc11cd01", preview:bc11Cd01Preview}],
     video:[bc11Video],
     description:"Speedboat Attack + Programas"
   },
@@ -169,7 +167,7 @@ export default[
     edition: "12",
     cover: bcCover12,
     published: "Septiembre de 2000",
-    gifts:[{code:"bc12cd01", preview:bc12Cd01Preview}],
+    cds:[{code:"bc12cd01", preview:bc12Cd01Preview}],
     video:[bc12Video],
     description:"Speed 2021 + Fotos de Australia"
   },
@@ -177,14 +175,14 @@ export default[
     edition: "13",
     cover: bcCover13,
     published: "Octubre de 2000",
-    gifts:[{code:"bc13cd01", preview:bc13Cd01Preview}],
+    cds:[{code:"bc13cd01", preview:bc13Cd01Preview}],
     description:"Crazy Pirat Pinball + 10 Programas"
   },
   {
     edition: "14",
     cover: bcCover14,
     published: "Noviembre de 2000",
-    gifts:[{code:"bc14cd01", preview:bc14Cd01Preview}],
+    cds:[{code:"bc14cd01", preview:bc14Cd01Preview}],
     video:[bc14Video],
     description:"Total Soccer 2000 + 3 Tetris"
   },
@@ -192,7 +190,7 @@ export default[
     edition: "15",
     cover: bcCover15,
     published: "Diciembre de 2000",
-    gifts:[{code:"bc15cd01", preview:bc15Cd01Preview}],
+    cds:[{code:"bc15cd01", preview:bc15Cd01Preview}],
     video:[bc15Video],
     description:"Toyland Racing + 5 Demos"
   },
@@ -200,21 +198,21 @@ export default[
     edition: "16",
     cover: bcCover16,
     published: "Enero de 2001",
-    gifts:[{code:"bc16cd01", preview:bc16Cd01Preview}],
+    cds:[{code:"bc16cd01", preview:bc16Cd01Preview}],
     description:"G-Tok: Batalla espacial + Salvapantallas 3D"
   },
   {
     edition: "17",
     cover: bcCover17,
     published: "Febrero de 2001",
-    gifts:[{code:"bc17cd01", preview: bc17Cd01Preview}],
+    cds:[{code:"bc17cd01", preview: bc17Cd01Preview}],
     description:"Rollerbot: El robot cometodo + Kit digital para papelería personal"
   },
   {
     edition: "18",
     cover: bcCover18,
     published: "Marzo de 2001",
-    gifts:[{code:"bc18cd01", preview: bc18Cd01Preview}, {code:"bc18cd02", preview: bc18Cd02Preview}],
+    cds:[{code:"bc18cd01", preview: bc18Cd01Preview}, {code:"bc18cd02", preview: bc18Cd02Preview}],
     video:[bc18Video],
     description:"Patrulla 2098 + Firewall"
   },
@@ -222,63 +220,63 @@ export default[
     edition: "19",
     cover: bcCover19,
     published: "Abril de 2001",
-    gifts:[{code:"bc19cd01", preview:bc19Cd01Preview}, {code:"bc19cd02", preview:bc19Cd02Preview}],
+    cds:[{code:"bc19cd01", preview:bc19Cd01Preview}, {code:"bc19cd02", preview:bc19Cd02Preview}],
     description:" RoboRumble + Fondos de escritorio + Curso de Internet + Fotos satelitales de Argentina"
   },
   {
     edition: "20",
     cover: bcCover20,
     published: "Mayo de 2001",
-    gifts:[{code:"bc20cd01", preview:bc20Cd01Preview}, {code:"bc20cd02", preview:bc20Cd02Preview}],
+    cds:[{code:"bc20cd01", preview:bc20Cd01Preview}, {code:"bc20cd02", preview:bc20Cd02Preview}],
     description:"Caballeros y Mercaderes + Dinosaurios"
   },
   {
     edition: "21",
     cover: bcCover21,
     published: "Junio de 2001",
-    gifts:[{code:"bc21cd01", preview:bc21Cd01Preview }, {code:"bc21cd02", preview:bc21Cd02Preview }],
+    cds:[{code:"bc21cd01", preview:bc21Cd01Preview }, {code:"bc21cd02", preview:bc21Cd02Preview }],
     description:"Silkolene Honda Motocross GP + Enciclopedia del Espacio y el Universo"
   },
   {
     edition: "22",
     cover: bcCover22,
     published: "Julio de 2001",
-    gifts:[{code:"bc22cd01", preview:bc22Cd01Preview}, {code:"bc22cd02", preview:bc22Cd02Preview}],
+    cds:[{code:"bc22cd01", preview:bc22Cd01Preview}, {code:"bc22cd02", preview:bc22Cd02Preview}],
     description:" Akimbo + Felinos"
   },
   {
     edition: "23",
     cover: bcCover23,
     published: "Agosto de 2001",
-    gifts:[{code:"bc23cd01", preview:bc23Cd01Preview}, {code:"bc23cd02", preview:bc23Cd02Preview}],
+    cds:[{code:"bc23cd01", preview:bc23Cd01Preview}, {code:"bc23cd02", preview:bc23Cd02Preview}],
     description:"Speedway + Top of the Pops Mix Factory"
   },
   {
     edition: "24",
     cover: bcCover24,
     published: "Septiembre de 2001",
-    gifts:[{code:"bc24cd01", preview:bc24Cd01Preview},{code:"bc24cd02", preview:bc24Cd02Preview}, {code:"bc24cd03", preview:bc24Cd03Preview}],
+    cds:[{code:"bc24cd01", preview:bc24Cd01Preview},{code:"bc24cd02", preview:bc24Cd02Preview}, {code:"bc24cd03", preview:bc24Cd03Preview}],
     description:"Seven Kingdoms + Enciclopedia de la naturaleza"
   },
   {
     edition: "25",
     cover: bcCover25,
     published: "Octubre de 2001",
-    gifts:[{code:"bc25cd01",  preview:bc25Cd01Preview},  {code:"bc25cd02",  preview:bc25Cd02Preview},{code:"bc25cd03",  preview:bc25Cd03Preview}],
+    cds:[{code:"bc25cd01",  preview:bc25Cd01Preview},  {code:"bc25cd02",  preview:bc25Cd02Preview},{code:"bc25cd03",  preview:bc25Cd03Preview}],
     description:"Super atletismo + Enciclopedia de la ciencia 2.0 + 9 Demos"
   },
   {
     edition: "26",
     cover: bcCover26,
     published: "Noviembre de 2001",
-    gifts:[{code:"bc26cd01",  preview:bc26Cd01Preview}, {code:"bc26cd02",  preview:bc26Cd02Preview}],
+    cds:[{code:"bc26cd01",  preview:bc26Cd01Preview}, {code:"bc26cd02",  preview:bc26Cd02Preview}],
     description:"Hades 2 + Moving Puzzle Mundo marino + 3 Demos"
   },
   {
     edition: "27",
     cover: bcCover27,
     published: "Diciembre de 2001",
-    gifts:[{code:"bc27cd01", preview:bc27Cd01Preview}, {code:"bc27cd02", preview:bc27Cd02Preview}],
+    cds:[{code:"bc27cd01", preview:bc27Cd01Preview}, {code:"bc27cd02", preview:bc27Cd02Preview}],
     description:"Tzar + Boomeran Breaker + 21 Programas"
   }
 ]

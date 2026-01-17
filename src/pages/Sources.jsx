@@ -8,7 +8,7 @@ export default function Sources() {
   return (
     <Window id="sources">
       <div className="h-[60px] flex items-center justify-between">
-            <img src={logo} className="w-[100px]"/>
+            <img src={logo} className="w-[100px]" alt=""/>
             <h1 className="text-[18px] text-white text-right w-[500px]">Fuentes</h1>
       </div>
       <section>
@@ -28,7 +28,7 @@ export default function Sources() {
               </div>
       </section>
       <div className="h-[60px] flex items-center justify-end">
-        <NavLink to="/"><img src={btnReturn} className="zoom  w-[40px] h-[40px]"/></NavLink>
+        <NavLink to="/acerca"><img src={btnReturn} className="zoom  w-[40px] h-[40px]" alt="Volver a los detalles del proyecto"/></NavLink>
       </div>
     </Window>
   )

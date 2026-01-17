@@ -1,26 +1,20 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { lazy, Suspense } from 'react'
+import { routes } from './utils/routesConfig'
 import './App.css'
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
-import Guestbook from './pages/Guestbook'
-import About from './pages/About'
-import NotFoundPage from './pages/NotFoundPage'
-import Home from './pages/Home'
-import Catalog from './pages/Catalog'
-import CD from './pages/CD'
-import Sources from './pages/Sources'
+const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 
+const PageLoader = () => <div className="loader">Cargando...</div>;
 
 function App() {
   return (
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />}/>
-          <Route path="/revistas" element={<Catalog />}/>
-          <Route path="/comentarios" element={<Guestbook />}/>
-          <Route path="/acerca" element={<About />}/>
-          <Route path="/fuentes" element={<Sources />}/>
-          <Route path="/cd/:code" element={<CD />}/>
-          <Route path="*" element={<NotFoundPage />}/>
-        </Routes>
+        <Suspense fallback={<PageLoader/>}>
+          <Routes>
+            {routes.map((route)=> <Route key={route.path} path={route.path} element={route.element}/>)}
+            <Route path="*" element={<NotFoundPage />}/>
+          </Routes>
+        </Suspense>
       </BrowserRouter>
   )
 }
