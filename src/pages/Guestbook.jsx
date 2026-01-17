@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import {Window, Header} from "../components/Window";
+import {Window, Header} from "../components";
 import btnReturn from '../assets/btn-return.png'
 
 export default function Guestbook() {
