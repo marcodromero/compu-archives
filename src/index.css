@@ -1,10 +1,10 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
-*{
-  cursor: url("./assets/cursor.png"),auto;
+* {
+  cursor: url('./assets/cursor.png'), auto;
 }
 
-html{
+html {
   width: 100%;
   font-size: 62.5%;
   font-family: Verdana, Arial, Helvetica, Serif;
@@ -21,46 +21,59 @@ body {
   background-size: cover;
 }
 
-.border-ridge{
+.border-ridge {
   border: 4px ridge #5061ff;
 }
 
-.tiny-zoom ,.big-zoom{
-   transition: 1s;
+.tiny-zoom,
+.big-zoom {
+  transition: 1s;
 }
 
-.tiny-zoom:hover{
-   transform: scale(1.1);
+.tiny-zoom:hover {
+  transform: scale(1.1);
 }
 
-.big-zoom:hover{
+.big-zoom:hover {
   transform: scale(1.8);
 }
 
-.bg-box{
-  background-color:#312c85;
+.bg-box {
+  background-color: #312c85;
   color: #f7f9fb;
 }
 
-#cds{
-   background-image: url("./assets/bg-move.webp");
-   background-repeat: no-repeat;
-   background-size:cover;
+#cds {
+  background-image: url('./assets/bg-move.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-#catalog, #cd, #home, #about, #guestbook, #sources, #notFound {
-  background: #DCD9E9;
-  background: linear-gradient(0deg, rgba(220, 217, 233, 1) 30%, rgba(74, 63, 146, 1) 100%);
+#catalog,
+#cd,
+#home,
+#about,
+#guestbook,
+#sources,
+#notFound {
+  background: #dcd9e9;
+  background: linear-gradient(
+    0deg,
+    rgba(220, 217, 233, 1) 30%,
+    rgba(74, 63, 146, 1) 100%
+  );
 }
-
 
 @media (min-width: 580px) {
-
-  #catalog, #cd, #home, #about, #guestbook, #sources, #notFound{
-    background-image: url("./assets/bg-menu2b.webp");
+  #catalog,
+  #cd,
+  #home,
+  #about,
+  #guestbook,
+  #sources,
+  #notFound {
+    background-image: url('./assets/bg-menu2b.webp');
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
   }
-
- 
 }

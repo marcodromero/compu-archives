@@ -26,8 +26,7 @@ import bcCover25 from './no-image.jpg';
 import bcCover26 from './no-image.jpg';
 import bcCover27 from './bc-cover27.jpg';
 
-
-export default[
+export default [
   bcCover01,
   bcCover02,
   bcCover03,
@@ -55,4 +54,4 @@ export default[
   bcCover25,
   bcCover26,
   bcCover27,
-]
+];
