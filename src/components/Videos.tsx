@@ -1,7 +1,7 @@
 import staticTv from '../assets/static-tv.webp';
 
 type VideosProps = {
-  src: string;
+  src?: string;
 };
 
 export default function Videos({ src }: VideosProps) {

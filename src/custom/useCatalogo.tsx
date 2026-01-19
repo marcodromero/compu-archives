@@ -1,4 +1,4 @@
-import { useReducer } from 'react';
+import { useEffect, useReducer } from 'react';
 import magazines from '../data/magazines';
 import { catalogReducer } from './catalogReducer';
 
@@ -9,9 +9,11 @@ type defaultStateType = {
 
 const init = (defaultState: defaultStateType) => {
   const idMagazineSaved = localStorage.getItem('idMagazine');
+  const idCDSaved = localStorage.getItem('idCD');
   return {
     ...defaultState,
     idMagazine: idMagazineSaved ? parseInt(idMagazineSaved) : 0,
+    idCD: idCDSaved ? parseInt(idCDSaved) : 0,
   };
 };
 
@@ -19,7 +21,7 @@ export default function useCatalogo() {
   const [state, dispatch] = useReducer(
     catalogReducer,
     { idCD: 0, idMagazine: 0 },
-    init,
+    init, //inicializador
   );
 
   const currentMagazine = magazines[state.idMagazine];
@@ -29,12 +31,16 @@ export default function useCatalogo() {
 
   function handleSelectMagazine(idMagazine: number) {
     dispatch({ type: 'SELECT_MAGAZINE', idMagazine });
-    localStorage.setItem('idMagazine', String(state.idMagazine));
   }
 
   function handleShowNextCD() {
     dispatch({ type: 'NEXT_CD', totalCDs });
   }
+
+  useEffect(() => {
+    localStorage.setItem('idMagazine', String(state.idMagazine));
+    localStorage.setItem('idCD', String(state.idCD));
+  }, [state.idMagazine, state.idCD]);
 
   return {
     handleSelectMagazine,

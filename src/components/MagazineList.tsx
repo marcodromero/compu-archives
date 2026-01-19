@@ -1,10 +1,12 @@
+import { useMagazineList } from '../custom/useMagazineList';
+
 type MagazineListProps = {
-  magazines: {
+  magazines?: {
     edition: string;
     cover: string;
     published: string;
     cds: { code: string; preview: string }[];
-    video: string;
+    video?: string;
     description: string;
   }[];
   handleSelectMagazine: (idMagazine: number) => void;
@@ -12,20 +14,26 @@ type MagazineListProps = {
 };
 
 export default function MagazineList({
-  magazines,
+  magazines = [],
   handleSelectMagazine,
   idMagazine,
 }: MagazineListProps) {
+  const { scrollContainerRef, selectedRef } = useMagazineList(idMagazine);
   return (
     <div className='w-full h-[340px] md:w-[200px] flex flex-col border-ridge'>
       <div className='bg-black text-amber-300 font-bold text-[12px] text-center'>
         Revistas
       </div>
-      <div className='w-full h-full overflow-scroll bg-white'>
+      <div
+        className='w-full h-full overflow-scroll bg-white'
+        ref={scrollContainerRef}
+      >
         {magazines.map((bc, i) => {
+          const isSelected = i === idMagazine;
           return (
             <button
               key={`bc${bc.edition}`}
+              ref={isSelected ? selectedRef : null}
               id={`bc${bc.edition}`}
               onClick={() => handleSelectMagazine(i)}
               className={`block text-[12px]  hover:bg-indigo-950 w-full text-left border-t-1 border-b-1 border-t-indigo-600 ${i === idMagazine ? 'bg-indigo-950' : ' bg-indigo-900'}  border-b-neutral-800 p-2 text-amber-300 `}

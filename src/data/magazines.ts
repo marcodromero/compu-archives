@@ -83,7 +83,7 @@ type magazinesType = {
   cover: string;
   published: string;
   cds: { code: string; preview: string }[];
-  video?: string[];
+  video?: string;
   description: string;
 }[];
 
@@ -96,7 +96,7 @@ const magazines: magazinesType = [
       { code: 'bc01cd01', preview: bc01Cd01Preview },
       { code: 'bc01cd02', preview: bc01Cd02Preview },
     ],
-    video: [bc01Video],
+    video: bc01Video,
     description: 'Claw + Encarta 2000 (Demo)',
   },
   {
@@ -135,7 +135,7 @@ const magazines: magazinesType = [
     cover: bcCover06,
     published: 'Marzo de 2000',
     cds: [{ code: 'bc06cd01', preview: bc06Cd01Preview }],
-    video: [bc06Video],
+    video: bc06Video,
     description: 'Diccionario Elemental Multilenguaje',
   },
   {
@@ -143,7 +143,7 @@ const magazines: magazinesType = [
     cover: bcCover07,
     published: 'Abril de 2000',
     cds: [{ code: 'bc07cd01', preview: bc07Cd01Preview }],
-    video: [bc07Video],
+    video: bc07Video,
     description: 'Eliminatorias Europeas',
   },
   {
@@ -165,7 +165,7 @@ const magazines: magazinesType = [
     cover: bcCover10,
     published: 'Julio de 2000',
     cds: [{ code: 'bc10cd01', preview: bc10Cd01Preview }],
-    video: [bc10Video],
+    video: bc10Video,
     description: 'Lode runner 2 + Fotos de la NASA',
   },
   {
@@ -173,7 +173,7 @@ const magazines: magazinesType = [
     cover: bcCover11,
     published: 'Agosto de 2000',
     cds: [{ code: 'bc11cd01', preview: bc11Cd01Preview }],
-    video: [bc11Video],
+    video: bc11Video,
     description: 'Speedboat Attack + Programas',
   },
   {
@@ -181,7 +181,7 @@ const magazines: magazinesType = [
     cover: bcCover12,
     published: 'Septiembre de 2000',
     cds: [{ code: 'bc12cd01', preview: bc12Cd01Preview }],
-    video: [bc12Video],
+    video: bc12Video,
     description: 'Speed 2021 + Fotos de Australia',
   },
   {
@@ -196,7 +196,7 @@ const magazines: magazinesType = [
     cover: bcCover14,
     published: 'Noviembre de 2000',
     cds: [{ code: 'bc14cd01', preview: bc14Cd01Preview }],
-    video: [bc14Video],
+    video: bc14Video,
     description: 'Total Soccer 2000 + 3 Tetris',
   },
   {
@@ -204,7 +204,7 @@ const magazines: magazinesType = [
     cover: bcCover15,
     published: 'Diciembre de 2000',
     cds: [{ code: 'bc15cd01', preview: bc15Cd01Preview }],
-    video: [bc15Video],
+    video: bc15Video,
     description: 'Toyland Racing + 5 Demos',
   },
   {
@@ -230,7 +230,7 @@ const magazines: magazinesType = [
       { code: 'bc18cd01', preview: bc18Cd01Preview },
       { code: 'bc18cd02', preview: bc18Cd02Preview },
     ],
-    video: [bc18Video],
+    video: bc18Video,
     description: 'Patrulla 2098 + Firewall',
   },
   {
