@@ -1,0 +1,47 @@
+import btnReturn from '../../assets/images/btn-return.webp';
+import { NavLink } from 'react-router-dom';
+import sources from './api/sources.ts';
+import Window from '../../components/Window.tsx';
+import Header from '../../components/Header.tsx';
+
+export default function Sources() {
+  return (
+    <Window id='sources'>
+      <Header title='Fuentes' />
+      <section>
+        <div className='w-full md:w-full h-full md:h-[340px]  flex flex-col border-ridge bg-box'>
+          <div className='bg-black text-amber-300 font-bold text-[12px] text-center'>
+            Se obtuvo información e imágenes de los siguientes sitios
+          </div>
+          <div className='w-full h-full overflow-y-auto  text-[12px] '>
+            <ul className='m-4 flex flex-col gap-4'>
+              {sources.map((item, i) => {
+                return (
+                  <li key={i}>
+                    🔗{' '}
+                    <a
+                      href={item.url}
+                      className='font-bold text-neutral-200 text-[14px] md:text-[12px]'
+                    >
+                      {' '}
+                      {item.description}
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        </div>
+      </section>
+      <div className='h-[60px] flex items-center justify-end'>
+        <NavLink to='/acerca'>
+          <img
+            src={btnReturn}
+            className='tiny-zoom  w-[40px] h-[40px]'
+            alt='Volver a los detalles del proyecto'
+          />
+        </NavLink>
+      </div>
+    </Window>
+  );
+}

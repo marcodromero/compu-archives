@@ -1,4 +1,4 @@
-import logo from '../assets/compu-logo.webp';
+import logo from '../assets/images/compu-logo.webp';
 
 type HeaderProps = {
   title?: string;

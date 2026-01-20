@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
-import { routes } from './utils/routesConfig';
+import { routes } from './router';
 import './App.css';
-const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
+const NotFoundPage = lazy(() => import('./features/404Page'));
 
 const PageLoader = () => <div className='loader'>Cargando...</div>;
 

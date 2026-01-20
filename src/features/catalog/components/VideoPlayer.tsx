@@ -1,0 +1,26 @@
+import staticTv from '../assets/images/static-tv.webp';
+
+type VideoPlayerProps = {
+  src?: string;
+};
+
+export default function VideoPlayer({ src }: VideoPlayerProps) {
+  return (
+    <div className='w-full md:w-[200px] h-[260px] md:h-[172px] border-ridge bg-black overflow-hidden'>
+      <div className='bg-black text-amber-300 font-bold text-[12px] text-center'>
+        Publicidad en TV
+      </div>
+      {src ? (
+        <video src={src} controls className=' md:w-[200px] md:h-[150px]'>
+          Tu navegador no admite el elemento video.
+        </video>
+      ) : (
+        <img
+          src={staticTv}
+          className='w-full  object-cover'
+          alt='No hay video de la publicidad para esta revista'
+        />
+      )}
+    </div>
+  );
+}
